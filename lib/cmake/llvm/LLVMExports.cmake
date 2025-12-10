@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.24)
+cmake_policy(VERSION 2.8.3...3.25)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -19,7 +19,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_cmake_targets_defined "")
 set(_cmake_targets_not_defined "")
 set(_cmake_expected_targets "")
-foreach(_cmake_expected_target IN ITEMS LLVMDemangle LLVMSupport LLVMTableGen LLVMTableGenGlobalISel llvm-tblgen LLVMCore LLVMFuzzerCLI LLVMFuzzMutate LLVMFileCheck LLVMInterfaceStub LLVMIRPrinter LLVMIRReader LLVMCodeGen LLVMSelectionDAG LLVMAsmPrinter LLVMMIRParser LLVMGlobalISel LLVMBinaryFormat LLVMBitReader LLVMBitWriter LLVMBitstreamReader LLVMDWARFLinker LLVMDWARFLinkerParallel LLVMExtensions LLVMFrontendHLSL LLVMFrontendOpenACC LLVMFrontendOpenMP LLVMTransformUtils LLVMInstrumentation LLVMAggressiveInstCombine LLVMInstCombine LLVMScalarOpts LLVMipo LLVMVectorize LLVMObjCARCOpts LLVMCoroutines LLVMCFGuard LLVMLinker LLVMAnalysis LLVMLTO LLVMMC LLVMMCParser LLVMMCDisassembler LLVMMCA LLVMObjCopy LLVMObject LLVMObjectYAML LLVMOption LLVMRemarks LLVMDebuginfod LLVMDebugInfoDWARF LLVMDebugInfoGSYM LLVMDebugInfoLogicalView LLVMDebugInfoMSF LLVMDebugInfoCodeView LLVMDebugInfoPDB LLVMSymbolize LLVMDWP LLVMExecutionEngine LLVMInterpreter LLVMJITLink LLVMMCJIT LLVMOrcJIT LLVMOrcShared LLVMOrcTargetProcess LLVMRuntimeDyld LLVMTarget LLVMX86CodeGen LLVMX86AsmParser LLVMX86Disassembler LLVMX86TargetMCA LLVMX86Desc LLVMX86Info LLVMARMCodeGen LLVMARMAsmParser LLVMARMDisassembler LLVMARMDesc LLVMARMInfo LLVMARMUtils LLVMAArch64CodeGen LLVMAArch64AsmParser LLVMAArch64Disassembler LLVMAArch64Desc LLVMAArch64Info LLVMAArch64Utils LLVMNVPTXCodeGen LLVMNVPTXDesc LLVMNVPTXInfo LLVMAMDGPUCodeGen LLVMAMDGPUAsmParser LLVMAMDGPUDisassembler LLVMAMDGPUTargetMCA LLVMAMDGPUDesc LLVMAMDGPUInfo LLVMAMDGPUUtils LLVMWebAssemblyCodeGen LLVMWebAssemblyAsmParser LLVMWebAssemblyDisassembler LLVMWebAssemblyDesc LLVMWebAssemblyInfo LLVMWebAssemblyUtils LLVMAsmParser LLVMLineEditor LLVMProfileData LLVMCoverage LLVMPasses LLVMTargetParser LLVMTextAPI LLVMDlltoolDriver LLVMLibDriver LLVMXRay LLVMWindowsDriver LLVMWindowsManifest FileCheck llvm-PerfectShuffle count not UnicodeNameMappingGenerator yaml-bench split-file LTO llvm-ar llvm-config llvm-lto llvm-profdata bugpoint dsymutil llc lli-child-target lli llvm-as llvm-bcanalyzer llvm-cat llvm-cfi-verify LLVMCFIVerify llvm-cov llvm-cvtres llvm-cxxdump llvm-cxxfilt llvm-cxxmap llvm-debuginfo-analyzer llvm-debuginfod llvm-debuginfod-find llvm-diff LLVMDiff llvm-dis llvm-dwarfdump llvm-dwarfutil llvm-dwp llvm-exegesis LLVMExegesisX86 LLVMExegesisAArch64 LLVMExegesis llvm-extract llvm-gsymutil llvm-ifs llvm-jitlink-executor llvm-jitlink llvm-libtool-darwin llvm-link llvm-lipo llvm-lto2 llvm-mc llvm-mca llvm-ml llvm-modextract llvm-mt llvm-nm llvm-objcopy llvm-objdump llvm-opt-report llvm-pdbutil llvm-profgen llvm-rc llvm-readobj llvm-reduce llvm-remark-size-diff llvm-remarkutil llvm-rtdyld llvm-sim llvm-size llvm-split llvm-stress llvm-strings llvm-symbolizer llvm-tapi-diff llvm-tli-checker llvm-undname llvm-xray obj2yaml opt Remarks sancov sanstats verify-uselistorder yaml2obj)
+foreach(_cmake_expected_target IN ITEMS LLVMDemangle LLVMSupport LLVMTableGen LLVMTableGenGlobalISel LLVMTableGenCommon llvm-tblgen LLVMCore LLVMFuzzerCLI LLVMFuzzMutate LLVMFileCheck LLVMInterfaceStub LLVMIRPrinter LLVMIRReader LLVMCodeGenTypes LLVMCodeGen LLVMSelectionDAG LLVMAsmPrinter LLVMMIRParser LLVMGlobalISel LLVMBinaryFormat LLVMBitReader LLVMBitWriter LLVMBitstreamReader LLVMDWARFLinker LLVMDWARFLinkerParallel LLVMExtensions LLVMFrontendHLSL LLVMFrontendOpenACC LLVMFrontendOpenMP LLVMTransformUtils LLVMInstrumentation LLVMAggressiveInstCombine LLVMInstCombine LLVMScalarOpts LLVMipo LLVMVectorize LLVMObjCARCOpts LLVMCoroutines LLVMCFGuard LLVMLinker LLVMAnalysis LLVMLTO LLVMMC LLVMMCParser LLVMMCDisassembler LLVMMCA LLVMObjCopy LLVMObject LLVMObjectYAML LLVMOption LLVMRemarks LLVMDebuginfod LLVMDebugInfoDWARF LLVMDebugInfoGSYM LLVMDebugInfoLogicalView LLVMDebugInfoMSF LLVMDebugInfoCodeView LLVMDebugInfoPDB LLVMSymbolize LLVMDebugInfoBTF LLVMDWP LLVMExecutionEngine LLVMInterpreter LLVMJITLink LLVMMCJIT LLVMOrcJIT LLVMOrcShared LLVMOrcTargetProcess LLVMRuntimeDyld LLVMTarget LLVMX86CodeGen LLVMX86AsmParser LLVMX86Disassembler LLVMX86TargetMCA LLVMX86Desc LLVMX86Info LLVMARMCodeGen LLVMARMAsmParser LLVMARMDisassembler LLVMARMDesc LLVMARMInfo LLVMARMUtils LLVMAArch64CodeGen LLVMAArch64AsmParser LLVMAArch64Disassembler LLVMAArch64Desc LLVMAArch64Info LLVMAArch64Utils LLVMNVPTXCodeGen LLVMNVPTXDesc LLVMNVPTXInfo LLVMAMDGPUCodeGen LLVMAMDGPUAsmParser LLVMAMDGPUDisassembler LLVMAMDGPUTargetMCA LLVMAMDGPUDesc LLVMAMDGPUInfo LLVMAMDGPUUtils LLVMWebAssemblyCodeGen LLVMWebAssemblyAsmParser LLVMWebAssemblyDisassembler LLVMWebAssemblyDesc LLVMWebAssemblyInfo LLVMWebAssemblyUtils LLVMAsmParser LLVMLineEditor LLVMProfileData LLVMCoverage LLVMPasses LLVMTargetParser LLVMTextAPI LLVMDlltoolDriver LLVMLibDriver LLVMXRay LLVMWindowsDriver LLVMWindowsManifest FileCheck llvm-PerfectShuffle count not UnicodeNameMappingGenerator yaml-bench split-file LTO llvm-ar llvm-config llvm-lto llvm-profdata bugpoint dsymutil llc lli-child-target lli llvm-as llvm-bcanalyzer llvm-cat llvm-cfi-verify LLVMCFIVerify llvm-cov llvm-cvtres llvm-cxxdump llvm-cxxfilt llvm-cxxmap llvm-debuginfo-analyzer llvm-debuginfod llvm-debuginfod-find llvm-diff LLVMDiff llvm-dis llvm-dwarfdump llvm-dwarfutil llvm-dwp llvm-exegesis LLVMExegesisX86 LLVMExegesisAArch64 LLVMExegesis llvm-extract llvm-gsymutil llvm-ifs llvm-jitlink-executor llvm-jitlink llvm-libtool-darwin llvm-link llvm-lipo llvm-lto2 llvm-mc llvm-mca llvm-ml llvm-modextract llvm-mt llvm-nm llvm-objcopy llvm-objdump llvm-opt-report llvm-pdbutil llvm-profgen llvm-rc llvm-readobj llvm-reduce llvm-remark-size-diff llvm-remarkutil llvm-rtdyld llvm-sim llvm-size llvm-split llvm-stress llvm-strings llvm-symbolizer llvm-tapi-diff llvm-tli-checker llvm-undname llvm-xray obj2yaml opt Remarks sancov sanstats verify-uselistorder yaml2obj)
   list(APPEND _cmake_expected_targets "${_cmake_expected_target}")
   if(TARGET "${_cmake_expected_target}")
     list(APPEND _cmake_targets_defined "${_cmake_expected_target}")
@@ -67,6 +67,9 @@ add_library(LLVMTableGen SHARED IMPORTED)
 # Create imported target LLVMTableGenGlobalISel
 add_library(LLVMTableGenGlobalISel SHARED IMPORTED)
 
+# Create imported target LLVMTableGenCommon
+add_library(LLVMTableGenCommon SHARED IMPORTED)
+
 # Create imported target llvm-tblgen
 add_executable(llvm-tblgen IMPORTED)
 
@@ -94,6 +97,9 @@ add_library(LLVMIRPrinter SHARED IMPORTED)
 
 # Create imported target LLVMIRReader
 add_library(LLVMIRReader SHARED IMPORTED)
+
+# Create imported target LLVMCodeGenTypes
+add_library(LLVMCodeGenTypes SHARED IMPORTED)
 
 # Create imported target LLVMCodeGen
 add_library(LLVMCodeGen SHARED IMPORTED)
@@ -233,6 +239,9 @@ add_library(LLVMDebugInfoPDB SHARED IMPORTED)
 
 # Create imported target LLVMSymbolize
 add_library(LLVMSymbolize SHARED IMPORTED)
+
+# Create imported target LLVMDebugInfoBTF
+add_library(LLVMDebugInfoBTF SHARED IMPORTED)
 
 # Create imported target LLVMDWP
 add_library(LLVMDWP SHARED IMPORTED)

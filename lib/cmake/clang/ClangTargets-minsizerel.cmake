@@ -117,7 +117,7 @@ list(APPEND _cmake_import_check_files_for_clangSema "${_IMPORT_PREFIX}/lib/libcl
 set_property(TARGET clangCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangCodeGen PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangCodeGen.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAnalysis;clangAST;clangBasic;clangFrontend;clangLex;clangSerialization;LLVMAnalysis;LLVMBitReader;LLVMBitWriter;LLVMCore;LLVMCoroutines;LLVMCoverage;LLVMDemangle;LLVMExtensions;LLVMFrontendHLSL;LLVMFrontendOpenMP;LLVMipo;LLVMIRPrinter;LLVMIRReader;LLVMAggressiveInstCombine;LLVMInstCombine;LLVMInstrumentation;LLVMLTO;LLVMLinker;LLVMMC;LLVMObjCARCOpts;LLVMObject;LLVMPasses;LLVMProfileData;LLVMRemarks;LLVMScalarOpts;LLVMSupport;LLVMTarget;LLVMTargetParser;LLVMTransformUtils"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAST;clangAnalysis;clangBasic;clangFrontend;clangLex;clangSerialization;LLVMAggressiveInstCombine;LLVMAnalysis;LLVMBitReader;LLVMBitWriter;LLVMCodeGenTypes;LLVMCore;LLVMCoroutines;LLVMCoverage;LLVMDemangle;LLVMExtensions;LLVMFrontendHLSL;LLVMFrontendOpenMP;LLVMipo;LLVMIRPrinter;LLVMIRReader;LLVMInstCombine;LLVMInstrumentation;LLVMLTO;LLVMLinker;LLVMMC;LLVMObjCARCOpts;LLVMObject;LLVMPasses;LLVMProfileData;LLVMScalarOpts;LLVMSupport;LLVMTarget;LLVMTargetParser;LLVMTransformUtils"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangCodeGen.dll"
   )
 
@@ -139,7 +139,7 @@ list(APPEND _cmake_import_check_files_for_clangAnalysis "${_IMPORT_PREFIX}/lib/l
 set_property(TARGET clangAnalysisFlowSensitive APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangAnalysisFlowSensitive PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangAnalysisFlowSensitive.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAnalysis;clangAST;clangBasic;LLVMFrontendOpenMP;LLVMSupport"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAnalysis;clangAST;clangBasic;clangLex;LLVMFrontendOpenMP;LLVMSupport"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangAnalysisFlowSensitive.dll"
   )
 
@@ -271,7 +271,7 @@ list(APPEND _cmake_import_check_files_for_clangToolingCore "${_IMPORT_PREFIX}/li
 set_property(TARGET clangToolingInclusions APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangToolingInclusions PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangToolingInclusions.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangBasic;clangLex;clangRewrite;clangToolingCore;LLVMSupport"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangBasic;clangLex;clangToolingCore;LLVMSupport"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangToolingInclusions.dll"
   )
 
@@ -326,7 +326,7 @@ list(APPEND _cmake_import_check_files_for_clangToolingSyntax "${_IMPORT_PREFIX}/
 set_property(TARGET clangDependencyScanning APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangDependencyScanning PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangDependencyScanning.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAST;clangBasic;clangCodeGen;clangDriver;clangFrontend;clangFrontendTool;clangLex;clangParse;clangSerialization;clangTooling;LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Desc;LLVMX86Disassembler;LLVMX86Info;LLVMARMCodeGen;LLVMARMAsmParser;LLVMARMDesc;LLVMARMDisassembler;LLVMARMInfo;LLVMARMUtils;LLVMAArch64CodeGen;LLVMAArch64AsmParser;LLVMAArch64Desc;LLVMAArch64Disassembler;LLVMAArch64Info;LLVMAArch64Utils;LLVMNVPTXCodeGen;LLVMNVPTXDesc;LLVMNVPTXInfo;LLVMAMDGPUCodeGen;LLVMAMDGPUAsmParser;LLVMAMDGPUDesc;LLVMAMDGPUDisassembler;LLVMAMDGPUInfo;LLVMAMDGPUUtils;LLVMWebAssemblyCodeGen;LLVMWebAssemblyAsmParser;LLVMWebAssemblyDesc;LLVMWebAssemblyDisassembler;LLVMWebAssemblyInfo;LLVMWebAssemblyUtils;LLVMCore;LLVMOption;LLVMSupport;LLVMTargetParser"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAST;clangBasic;clangCodeGen;clangDriver;clangFrontend;clangLex;clangSerialization;clangTooling;LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Desc;LLVMX86Disassembler;LLVMX86Info;LLVMARMCodeGen;LLVMARMAsmParser;LLVMARMDesc;LLVMARMDisassembler;LLVMARMInfo;LLVMARMUtils;LLVMAArch64CodeGen;LLVMAArch64AsmParser;LLVMAArch64Desc;LLVMAArch64Disassembler;LLVMAArch64Info;LLVMAArch64Utils;LLVMNVPTXCodeGen;LLVMNVPTXDesc;LLVMNVPTXInfo;LLVMAMDGPUCodeGen;LLVMAMDGPUAsmParser;LLVMAMDGPUDesc;LLVMAMDGPUDisassembler;LLVMAMDGPUInfo;LLVMAMDGPUUtils;LLVMWebAssemblyCodeGen;LLVMWebAssemblyAsmParser;LLVMWebAssemblyDesc;LLVMWebAssemblyDisassembler;LLVMWebAssemblyInfo;LLVMWebAssemblyUtils;LLVMCore;LLVMOption;LLVMSupport;LLVMTargetParser"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangDependencyScanning.dll"
   )
 
@@ -370,7 +370,7 @@ list(APPEND _cmake_import_check_files_for_clangDirectoryWatcher "${_IMPORT_PREFI
 set_property(TARGET clangIndex APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangIndex PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangIndex.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAST;clangBasic;clangFormat;clangFrontend;clangLex;clangRewrite;clangSerialization;clangToolingCore;LLVMCore;LLVMSupport"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAST;clangBasic;clangFormat;clangFrontend;clangLex;clangSerialization;clangToolingCore;LLVMCore;LLVMSupport"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangIndex.dll"
   )
 
@@ -436,7 +436,7 @@ list(APPEND _cmake_import_check_files_for_clangFormat "${_IMPORT_PREFIX}/lib/lib
 set_property(TARGET clangInterpreter APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangInterpreter PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangInterpreter.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAST;clangAnalysis;clangBasic;clangDriver;clangEdit;clangFrontend;clangLex;clangParse;clangSema;clangSerialization;clangCodeGen;clangFrontendTool;LLVMCore;LLVMOption;LLVMOrcJIT;LLVMSupport;LLVMTarget;LLVMTargetParser;LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Desc;LLVMX86Disassembler;LLVMX86Info"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAST;clangAnalysis;clangBasic;clangCodeGen;clangDriver;clangFrontend;clangFrontendTool;clangLex;clangParse;clangSema;clangSerialization;LLVMCore;LLVMMC;LLVMOption;LLVMOrcJIT;LLVMOrcShared;LLVMOrcTargetProcess;LLVMSupport;LLVMTarget;LLVMTargetParser;LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Desc;LLVMX86Disassembler;LLVMX86Info"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangInterpreter.dll"
   )
 
@@ -637,7 +637,7 @@ list(APPEND _cmake_import_check_files_for_modularize "${_IMPORT_PREFIX}/bin/modu
 set_property(TARGET clangTidy APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangTidy PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangTidy.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "LLVMFrontendOpenMP;LLVMSupport;clangAnalysis;clangAST;clangASTMatchers;clangBasic;clangFormat;clangFrontend;clangLex;clangRewrite;clangSema;clangSerialization;clangTooling;clangToolingCore;clangStaticAnalyzerCore;clangStaticAnalyzerFrontend"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "LLVMFrontendOpenMP;LLVMSupport;clangAST;clangASTMatchers;clangAnalysis;clangBasic;clangFormat;clangFrontend;clangLex;clangRewrite;clangSema;clangSerialization;clangTooling;clangToolingCore;clangStaticAnalyzerCore;clangStaticAnalyzerFrontend"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangTidy.dll"
   )
 
@@ -725,7 +725,7 @@ list(APPEND _cmake_import_check_files_for_clangTidyConcurrencyModule "${_IMPORT_
 set_property(TARGET clangTidyCppCoreGuidelinesModule APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangTidyCppCoreGuidelinesModule PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangTidyCppCoreGuidelinesModule.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangTidy;clangTidyMiscModule;clangTidyModernizeModule;clangTidyReadabilityModule;clangTidyUtils;LLVMFrontendOpenMP;LLVMSupport;clangAST;clangASTMatchers;clangBasic;clangLex;clangSerialization;clangTooling"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangTidy;clangTidyMiscModule;clangTidyModernizeModule;clangTidyPerformanceModule;clangTidyReadabilityModule;clangTidyUtils;LLVMFrontendOpenMP;LLVMSupport;clangAST;clangASTMatchers;clangBasic;clangLex;clangSerialization;clangTooling"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangTidyCppCoreGuidelinesModule.dll"
   )
 
@@ -813,7 +813,7 @@ list(APPEND _cmake_import_check_files_for_clangTidyLLVMLibcModule "${_IMPORT_PRE
 set_property(TARGET clangTidyMiscModule APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangTidyMiscModule PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangTidyMiscModule.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAnalysis;clangTidy;clangTidyUtils;LLVMFrontendOpenMP;LLVMSupport;clangAST;clangASTMatchers;clangBasic;clangLex;clangSerialization;clangTooling"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangAnalysis;clangTidy;clangTidyUtils;LLVMFrontendOpenMP;LLVMSupport;clangAST;clangASTMatchers;clangBasic;clangFormat;clangLex;clangSerialization;clangTooling;clangToolingInclusions;clangToolingInclusionsStdlib;clangIncludeCleaner"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangTidyMiscModule.dll"
   )
 
@@ -943,7 +943,7 @@ list(APPEND _cmake_import_check_files_for_clang-tidy "${_IMPORT_PREFIX}/bin/clan
 set_property(TARGET clangTidyUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(clangTidyUtils PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangTidyUtils.dll.a"
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangTidy;LLVMFrontendOpenMP;LLVMSupport;clangAST;clangASTMatchers;clangBasic;clangLex;clangSema;clangTransformer"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "clangTidy;LLVMFrontendOpenMP;LLVMSupport;clangAST;clangASTMatchers;clangBasic;clangLex;clangSema;clangTooling;clangTransformer"
   IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangTidyUtils.dll"
   )
 
@@ -1195,6 +1195,17 @@ set_target_properties(clangDaemonTweaks PROPERTIES
 
 list(APPEND _cmake_import_check_targets clangDaemonTweaks )
 list(APPEND _cmake_import_check_files_for_clangDaemonTweaks "${_IMPORT_PREFIX}/lib/libclangDaemonTweaks.dll.a" "${_IMPORT_PREFIX}/bin/libclangDaemonTweaks.dll" )
+
+# Import target "clangdMain" for configuration "MinSizeRel"
+set_property(TARGET clangdMain APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
+set_target_properties(clangdMain PROPERTIES
+  IMPORTED_IMPLIB_MINSIZEREL "${_IMPORT_PREFIX}/lib/libclangdMain.dll.a"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_MINSIZEREL "LLVMSupport;LLVMX86Info;LLVMARMInfo;LLVMAArch64Info;LLVMNVPTXInfo;LLVMAMDGPUInfo;LLVMWebAssemblyInfo;LLVMFrontendOpenMP;LLVMOption;LLVMTargetParser;clangAST;clangBasic;clangFormat;clangFrontend;clangLex;clangSema;clangTooling;clangToolingCore;clangToolingRefactoring;clangToolingSyntax;clangTidy;clangDaemon;clangdRemoteIndex;clangdSupport"
+  IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/libclangdMain.dll"
+  )
+
+list(APPEND _cmake_import_check_targets clangdMain )
+list(APPEND _cmake_import_check_files_for_clangdMain "${_IMPORT_PREFIX}/lib/libclangdMain.dll.a" "${_IMPORT_PREFIX}/bin/libclangdMain.dll" )
 
 # Import target "clangd" for configuration "MinSizeRel"
 set_property(TARGET clangd APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)

@@ -1,4 +1,4 @@
-This is libgomp.info, produced by makeinfo version 7.0.3 from
+This is libgomp.info, produced by makeinfo version 7.1 from
 libgomp.texi.
 
 Copyright © 2006-2023 Free Software Foundation, Inc.
@@ -6,16 +6,16 @@ Copyright © 2006-2023 Free Software Foundation, Inc.
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
 any later version published by the Free Software Foundation; with the
-Invariant Sections being “Funding Free Software”, the Front-Cover texts
+Invariant Sections being "Funding Free Software", the Front-Cover texts
 being (a) (see below), and with the Back-Cover Texts being (b) (see
-below).  A copy of the license is included in the section entitled “GNU
-Free Documentation License”.
+below).  A copy of the license is included in the section entitled "GNU
+Free Documentation License".
 
-   (a) The FSF’s Front-Cover Text is:
+   (a) The FSF's Front-Cover Text is:
 
    A GNU Manual
 
-   (b) The FSF’s Back-Cover Text is:
+   (b) The FSF's Back-Cover Text is:
 
    You have freedom to copy and modify this GNU Manual, like GNU
 software.  Copies published by the Free Software Foundation raise funds
@@ -38,16 +38,16 @@ Floor Boston, MA 02110-1301 USA
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
 any later version published by the Free Software Foundation; with the
-Invariant Sections being “Funding Free Software”, the Front-Cover texts
+Invariant Sections being "Funding Free Software", the Front-Cover texts
 being (a) (see below), and with the Back-Cover Texts being (b) (see
-below).  A copy of the license is included in the section entitled “GNU
-Free Documentation License”.
+below).  A copy of the license is included in the section entitled "GNU
+Free Documentation License".
 
-   (a) The FSF’s Front-Cover Text is:
+   (a) The FSF's Front-Cover Text is:
 
    A GNU Manual
 
-   (b) The FSF’s Back-Cover Text is:
+   (b) The FSF's Back-Cover Text is:
 
    You have freedom to copy and modify this GNU Manual, like GNU
 software.  Copies published by the Free Software Foundation raise funds
@@ -69,7 +69,7 @@ offloading of code to accelerator devices in C/C++ and Fortran.
 
    Originally, libgomp implemented the GNU OpenMP Runtime Library.
 Based on this, support for OpenACC and offloading (both OpenACC and
-OpenMP 4’s target construct) has been added later on, and the library’s
+OpenMP 4's target construct) has been added later on, and the library's
 name changed to GNU Offloading and Multi Processing Runtime Library.
 
 * Menu:
@@ -139,7 +139,7 @@ File: libgomp.info,  Node: OpenMP Implementation Status,  Next: Runtime Library 
 * OpenMP 5.2:: Feature completion status to 5.2 specification
 * OpenMP Technical Report 11:: Feature completion status to first 6.0 preview
 
-The ‘_OPENMP’ preprocessor macro and Fortran’s ‘openmp_version’
+The ‘_OPENMP’ preprocessor macro and Fortran's ‘openmp_version’
 parameter, provided by ‘omp_lib.h’ and the ‘omp_lib’ module, have the
 value ‘201511’ (i.e.  OpenMP 4.5).
 
@@ -223,9 +223,9 @@ Memory management routines                  Y
 Implicit declare target directive           Y
 Discontiguous array section with ‘target    N
 update’ construct
-C/C++’s lvalue expressions in ‘to’,         N
+C/C++'s lvalue expressions in ‘to’,         N
 ‘from’ and ‘map’ clauses
-C/C++’s lvalue expressions in ‘depend’      Y
+C/C++'s lvalue expressions in ‘depend’      Y
 clauses
 Nested ‘declare target’ directive           Y
 Combined ‘master’ constructs                Y
@@ -264,7 +264,7 @@ Other new OpenMP 5.0 features
 
 Description                                 Status  Comments
 -----------------------------------------------------------------------
-Supporting C++’s range-based for loop       Y
+Supporting C++'s range-based for loop       Y
 
 
 File: libgomp.info,  Node: OpenMP 5.1,  Next: OpenMP 5.2,  Prev: OpenMP 5.0,  Up: OpenMP Implementation Status
@@ -283,7 +283,7 @@ specifiers
 _target_device trait_ in OpenMP Context     N
 ‘target_device’ selector set in context     N
 selectors
-C/C++’s ‘declare variant’ directive:        N
+C/C++'s ‘declare variant’ directive:        N
 elision support of preprocessed code
 ‘declare variant’: new clauses              N
 ‘adjust_args’ and ‘append_args’
@@ -622,7 +622,7 @@ Support for event objects.
 
 File: libgomp.info,  Node: omp_get_active_level,  Next: omp_get_ancestor_thread_num,  Up: Runtime Library Routines
 
-3.1 ‘omp_get_active_level’ – Number of parallel regions
+3.1 ‘omp_get_active_level’ - Number of parallel regions
 =======================================================
 
 _Description_:
@@ -645,7 +645,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_ancestor_thread_num,  Next: omp_get_cancellation,  Prev: omp_get_active_level,  Up: Runtime Library Routines
 
-3.2 ‘omp_get_ancestor_thread_num’ – Ancestor thread ID
+3.2 ‘omp_get_ancestor_thread_num’ - Ancestor thread ID
 ======================================================
 
 _Description_:
@@ -671,7 +671,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_cancellation,  Next: omp_get_default_device,  Prev: omp_get_ancestor_thread_num,  Up: Runtime Library Routines
 
-3.3 ‘omp_get_cancellation’ – Whether cancellation support is enabled
+3.3 ‘omp_get_cancellation’ - Whether cancellation support is enabled
 ====================================================================
 
 _Description_:
@@ -695,7 +695,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_default_device,  Next: omp_get_device_num,  Prev: omp_get_cancellation,  Up: Runtime Library Routines
 
-3.4 ‘omp_get_default_device’ – Get the default device for target regions
+3.4 ‘omp_get_default_device’ - Get the default device for target regions
 ========================================================================
 
 _Description_:
@@ -716,7 +716,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_device_num,  Next: omp_get_dynamic,  Prev: omp_get_default_device,  Up: Runtime Library Routines
 
-3.5 ‘omp_get_device_num’ – Return device number of current device
+3.5 ‘omp_get_device_num’ - Return device number of current device
 =================================================================
 
 _Description_:
@@ -740,7 +740,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_dynamic,  Next: omp_get_initial_device,  Prev: omp_get_device_num,  Up: Runtime Library Routines
 
-3.6 ‘omp_get_dynamic’ – Dynamic teams setting
+3.6 ‘omp_get_dynamic’ - Dynamic teams setting
 =============================================
 
 _Description_:
@@ -767,7 +767,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_initial_device,  Next: omp_get_level,  Prev: omp_get_dynamic,  Up: Runtime Library Routines
 
-3.7 ‘omp_get_initial_device’ – Return device number of initial device
+3.7 ‘omp_get_initial_device’ - Return device number of initial device
 =====================================================================
 
 _Description_:
@@ -790,7 +790,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_level,  Next: omp_get_max_active_levels,  Prev: omp_get_initial_device,  Up: Runtime Library Routines
 
-3.8 ‘omp_get_level’ – Obtain the current nesting level
+3.8 ‘omp_get_level’ - Obtain the current nesting level
 ======================================================
 
 _Description_:
@@ -812,7 +812,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_max_active_levels,  Next: omp_get_max_task_priority,  Prev: omp_get_level,  Up: Runtime Library Routines
 
-3.9 ‘omp_get_max_active_levels’ – Current maximum number of active regions
+3.9 ‘omp_get_max_active_levels’ - Current maximum number of active regions
 ==========================================================================
 
 _Description_:
@@ -834,7 +834,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_max_task_priority,  Next: omp_get_max_teams,  Prev: omp_get_max_active_levels,  Up: Runtime Library Routines
 
-3.10 ‘omp_get_max_task_priority’ – Maximum priority value
+3.10 ‘omp_get_max_task_priority’ - Maximum priority value
 =========================================================
 
 that can be set for tasks.
@@ -854,7 +854,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_max_teams,  Next: omp_get_max_threads,  Prev: omp_get_max_task_priority,  Up: Runtime Library Routines
 
-3.11 ‘omp_get_max_teams’ – Maximum number of teams of teams region
+3.11 ‘omp_get_max_teams’ - Maximum number of teams of teams region
 ==================================================================
 
 _Description_:
@@ -876,7 +876,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_max_threads,  Next: omp_get_nested,  Prev: omp_get_max_teams,  Up: Runtime Library Routines
 
-3.12 ‘omp_get_max_threads’ – Maximum number of threads of parallel region
+3.12 ‘omp_get_max_threads’ - Maximum number of threads of parallel region
 =========================================================================
 
 _Description_:
@@ -899,7 +899,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_nested,  Next: omp_get_num_devices,  Prev: omp_get_max_threads,  Up: Runtime Library Routines
 
-3.13 ‘omp_get_nested’ – Nested parallel regions
+3.13 ‘omp_get_nested’ - Nested parallel regions
 ===============================================
 
 _Description_:
@@ -938,7 +938,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_num_devices,  Next: omp_get_num_procs,  Prev: omp_get_nested,  Up: Runtime Library Routines
 
-3.14 ‘omp_get_num_devices’ – Number of target devices
+3.14 ‘omp_get_num_devices’ - Number of target devices
 =====================================================
 
 _Description_:
@@ -956,7 +956,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_num_procs,  Next: omp_get_num_teams,  Prev: omp_get_num_devices,  Up: Runtime Library Routines
 
-3.15 ‘omp_get_num_procs’ – Number of processors online
+3.15 ‘omp_get_num_procs’ - Number of processors online
 ======================================================
 
 _Description_:
@@ -974,7 +974,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_num_teams,  Next: omp_get_num_threads,  Prev: omp_get_num_procs,  Up: Runtime Library Routines
 
-3.16 ‘omp_get_num_teams’ – Number of teams
+3.16 ‘omp_get_num_teams’ - Number of teams
 ==========================================
 
 _Description_:
@@ -992,7 +992,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_num_threads,  Next: omp_get_proc_bind,  Prev: omp_get_num_teams,  Up: Runtime Library Routines
 
-3.17 ‘omp_get_num_threads’ – Size of the active team
+3.17 ‘omp_get_num_threads’ - Size of the active team
 ====================================================
 
 _Description_:
@@ -1022,7 +1022,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_proc_bind,  Next: omp_get_schedule,  Prev: omp_get_num_threads,  Up: Runtime Library Routines
 
-3.18 ‘omp_get_proc_bind’ – Whether threads may be moved between CPUs
+3.18 ‘omp_get_proc_bind’ - Whether threads may be moved between CPUs
 ====================================================================
 
 _Description_:
@@ -1050,7 +1050,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_schedule,  Next: omp_get_supported_active_levels,  Prev: omp_get_proc_bind,  Up: Runtime Library Routines
 
-3.19 ‘omp_get_schedule’ – Obtain the runtime scheduling method
+3.19 ‘omp_get_schedule’ - Obtain the runtime scheduling method
 ==============================================================
 
 _Description_:
@@ -1077,7 +1077,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_supported_active_levels,  Next: omp_get_team_num,  Prev: omp_get_schedule,  Up: Runtime Library Routines
 
-3.20 ‘omp_get_supported_active_levels’ – Maximum number of active regions supported
+3.20 ‘omp_get_supported_active_levels’ - Maximum number of active regions supported
 ===================================================================================
 
 _Description_:
@@ -1100,7 +1100,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_team_num,  Next: omp_get_team_size,  Prev: omp_get_supported_active_levels,  Up: Runtime Library Routines
 
-3.21 ‘omp_get_team_num’ – Get team number
+3.21 ‘omp_get_team_num’ - Get team number
 =========================================
 
 _Description_:
@@ -1118,7 +1118,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_team_size,  Next: omp_get_teams_thread_limit,  Prev: omp_get_team_num,  Up: Runtime Library Routines
 
-3.22 ‘omp_get_team_size’ – Number of threads in a team
+3.22 ‘omp_get_team_size’ - Number of threads in a team
 ======================================================
 
 _Description_:
@@ -1145,7 +1145,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_teams_thread_limit,  Next: omp_get_thread_limit,  Prev: omp_get_team_size,  Up: Runtime Library Routines
 
-3.23 ‘omp_get_teams_thread_limit’ – Maximum number of threads imposed by teams
+3.23 ‘omp_get_teams_thread_limit’ - Maximum number of threads imposed by teams
 ==============================================================================
 
 _Description_:
@@ -1167,7 +1167,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_thread_limit,  Next: omp_get_thread_num,  Prev: omp_get_teams_thread_limit,  Up: Runtime Library Routines
 
-3.24 ‘omp_get_thread_limit’ – Maximum number of threads
+3.24 ‘omp_get_thread_limit’ - Maximum number of threads
 =======================================================
 
 _Description_:
@@ -1188,7 +1188,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_thread_num,  Next: omp_in_parallel,  Prev: omp_get_thread_limit,  Up: Runtime Library Routines
 
-3.25 ‘omp_get_thread_num’ – Current thread ID
+3.25 ‘omp_get_thread_num’ - Current thread ID
 =============================================
 
 _Description_:
@@ -1213,7 +1213,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_in_parallel,  Next: omp_in_final,  Prev: omp_get_thread_num,  Up: Runtime Library Routines
 
-3.26 ‘omp_in_parallel’ – Whether a parallel region is active
+3.26 ‘omp_in_parallel’ - Whether a parallel region is active
 ============================================================
 
 _Description_:
@@ -1233,7 +1233,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_in_final,  Next: omp_is_initial_device,  Prev: omp_in_parallel,  Up: Runtime Library Routines
 
-3.27 ‘omp_in_final’ – Whether in final or included task region
+3.27 ‘omp_in_final’ - Whether in final or included task region
 ==============================================================
 
 _Description_:
@@ -1253,7 +1253,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_is_initial_device,  Next: omp_set_default_device,  Prev: omp_in_final,  Up: Runtime Library Routines
 
-3.28 ‘omp_is_initial_device’ – Whether executing on the host device
+3.28 ‘omp_is_initial_device’ - Whether executing on the host device
 ===================================================================
 
 _Description_:
@@ -1273,7 +1273,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_default_device,  Next: omp_set_dynamic,  Prev: omp_is_initial_device,  Up: Runtime Library Routines
 
-3.29 ‘omp_set_default_device’ – Set the default device for target regions
+3.29 ‘omp_set_default_device’ - Set the default device for target regions
 =========================================================================
 
 _Description_:
@@ -1296,7 +1296,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_dynamic,  Next: omp_set_max_active_levels,  Prev: omp_set_default_device,  Up: Runtime Library Routines
 
-3.30 ‘omp_set_dynamic’ – Enable/disable dynamic teams
+3.30 ‘omp_set_dynamic’ - Enable/disable dynamic teams
 =====================================================
 
 _Description_:
@@ -1321,7 +1321,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_max_active_levels,  Next: omp_set_nested,  Prev: omp_set_dynamic,  Up: Runtime Library Routines
 
-3.31 ‘omp_set_max_active_levels’ – Limits the number of active parallel regions
+3.31 ‘omp_set_max_active_levels’ - Limits the number of active parallel regions
 ===============================================================================
 
 _Description_:
@@ -1346,7 +1346,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_nested,  Next: omp_set_num_teams,  Prev: omp_set_max_active_levels,  Up: Runtime Library Routines
 
-3.32 ‘omp_set_nested’ – Enable/disable nested parallel regions
+3.32 ‘omp_set_nested’ - Enable/disable nested parallel regions
 ==============================================================
 
 _Description_:
@@ -1377,7 +1377,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_num_teams,  Next: omp_set_num_threads,  Prev: omp_set_nested,  Up: Runtime Library Routines
 
-3.33 ‘omp_set_num_teams’ – Set upper teams limit for teams construct
+3.33 ‘omp_set_num_teams’ - Set upper teams limit for teams construct
 ====================================================================
 
 _Description_:
@@ -1402,7 +1402,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_num_threads,  Next: omp_set_schedule,  Prev: omp_set_num_teams,  Up: Runtime Library Routines
 
-3.34 ‘omp_set_num_threads’ – Set upper team size limit
+3.34 ‘omp_set_num_threads’ - Set upper team size limit
 ======================================================
 
 _Description_:
@@ -1427,7 +1427,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_schedule,  Next: omp_set_teams_thread_limit,  Prev: omp_set_num_threads,  Up: Runtime Library Routines
 
-3.35 ‘omp_set_schedule’ – Set the runtime scheduling method
+3.35 ‘omp_set_schedule’ - Set the runtime scheduling method
 ===========================================================
 
 _Description_:
@@ -1456,7 +1456,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_teams_thread_limit,  Next: omp_init_lock,  Prev: omp_set_schedule,  Up: Runtime Library Routines
 
-3.36 ‘omp_set_teams_thread_limit’ – Set upper thread limit for teams construct
+3.36 ‘omp_set_teams_thread_limit’ - Set upper thread limit for teams construct
 ==============================================================================
 
 _Description_:
@@ -1482,7 +1482,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_init_lock,  Next: omp_set_lock,  Prev: omp_set_teams_thread_limit,  Up: Runtime Library Routines
 
-3.37 ‘omp_init_lock’ – Initialize simple lock
+3.37 ‘omp_init_lock’ - Initialize simple lock
 =============================================
 
 _Description_:
@@ -1505,7 +1505,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_lock,  Next: omp_test_lock,  Prev: omp_init_lock,  Up: Runtime Library Routines
 
-3.38 ‘omp_set_lock’ – Wait for and set simple lock
+3.38 ‘omp_set_lock’ - Wait for and set simple lock
 ==================================================
 
 _Description_:
@@ -1531,7 +1531,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_test_lock,  Next: omp_unset_lock,  Prev: omp_set_lock,  Up: Runtime Library Routines
 
-3.39 ‘omp_test_lock’ – Test and set simple lock if available
+3.39 ‘omp_test_lock’ - Test and set simple lock if available
 ============================================================
 
 _Description_:
@@ -1557,7 +1557,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_unset_lock,  Next: omp_destroy_lock,  Prev: omp_test_lock,  Up: Runtime Library Routines
 
-3.40 ‘omp_unset_lock’ – Unset simple lock
+3.40 ‘omp_unset_lock’ - Unset simple lock
 =========================================
 
 _Description_:
@@ -1584,7 +1584,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_destroy_lock,  Next: omp_init_nest_lock,  Prev: omp_unset_lock,  Up: Runtime Library Routines
 
-3.41 ‘omp_destroy_lock’ – Destroy simple lock
+3.41 ‘omp_destroy_lock’ - Destroy simple lock
 =============================================
 
 _Description_:
@@ -1607,7 +1607,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_init_nest_lock,  Next: omp_set_nest_lock,  Prev: omp_destroy_lock,  Up: Runtime Library Routines
 
-3.42 ‘omp_init_nest_lock’ – Initialize nested lock
+3.42 ‘omp_init_nest_lock’ - Initialize nested lock
 ==================================================
 
 _Description_:
@@ -1630,7 +1630,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_set_nest_lock,  Next: omp_test_nest_lock,  Prev: omp_init_nest_lock,  Up: Runtime Library Routines
 
-3.43 ‘omp_set_nest_lock’ – Wait for and set nested lock
+3.43 ‘omp_set_nest_lock’ - Wait for and set nested lock
 =======================================================
 
 _Description_:
@@ -1655,7 +1655,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_test_nest_lock,  Next: omp_unset_nest_lock,  Prev: omp_set_nest_lock,  Up: Runtime Library Routines
 
-3.44 ‘omp_test_nest_lock’ – Test and set nested lock if available
+3.44 ‘omp_test_nest_lock’ - Test and set nested lock if available
 =================================================================
 
 _Description_:
@@ -1681,7 +1681,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_unset_nest_lock,  Next: omp_destroy_nest_lock,  Prev: omp_test_nest_lock,  Up: Runtime Library Routines
 
-3.45 ‘omp_unset_nest_lock’ – Unset nested lock
+3.45 ‘omp_unset_nest_lock’ - Unset nested lock
 ==============================================
 
 _Description_:
@@ -1709,7 +1709,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_destroy_nest_lock,  Next: omp_get_wtick,  Prev: omp_unset_nest_lock,  Up: Runtime Library Routines
 
-3.46 ‘omp_destroy_nest_lock’ – Destroy nested lock
+3.46 ‘omp_destroy_nest_lock’ - Destroy nested lock
 ==================================================
 
 _Description_:
@@ -1733,7 +1733,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_wtick,  Next: omp_get_wtime,  Prev: omp_destroy_nest_lock,  Up: Runtime Library Routines
 
-3.47 ‘omp_get_wtick’ – Get timer precision
+3.47 ‘omp_get_wtick’ - Get timer precision
 ==========================================
 
 _Description_:
@@ -1755,7 +1755,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_get_wtime,  Next: omp_fulfill_event,  Prev: omp_get_wtick,  Up: Runtime Library Routines
 
-3.48 ‘omp_get_wtime’ – Elapsed wall clock time
+3.48 ‘omp_get_wtime’ - Elapsed wall clock time
 ==============================================
 
 _Description_:
@@ -1780,7 +1780,7 @@ _Reference_:
 
 File: libgomp.info,  Node: omp_fulfill_event,  Prev: omp_get_wtime,  Up: Runtime Library Routines
 
-3.49 ‘omp_fulfill_event’ – Fulfill and destroy an OpenMP event
+3.49 ‘omp_fulfill_event’ - Fulfill and destroy an OpenMP event
 ==============================================================
 
 _Description_:
@@ -1842,7 +1842,7 @@ beginning with ‘GOMP_’ are GNU extensions.
 
 File: libgomp.info,  Node: OMP_CANCELLATION,  Next: OMP_DISPLAY_ENV,  Up: Environment Variables
 
-4.1 ‘OMP_CANCELLATION’ – Set whether cancellation is activated
+4.1 ‘OMP_CANCELLATION’ - Set whether cancellation is activated
 ==============================================================
 
 _Description_:
@@ -1859,7 +1859,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_DISPLAY_ENV,  Next: OMP_DEFAULT_DEVICE,  Prev: OMP_CANCELLATION,  Up: Environment Variables
 
-4.2 ‘OMP_DISPLAY_ENV’ – Show OpenMP version and environment variables
+4.2 ‘OMP_DISPLAY_ENV’ - Show OpenMP version and environment variables
 =====================================================================
 
 _Description_:
@@ -1875,7 +1875,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_DEFAULT_DEVICE,  Next: OMP_DYNAMIC,  Prev: OMP_DISPLAY_ENV,  Up: Environment Variables
 
-4.3 ‘OMP_DEFAULT_DEVICE’ – Set the device used in target regions
+4.3 ‘OMP_DEFAULT_DEVICE’ - Set the device used in target regions
 ================================================================
 
 _Description_:
@@ -1894,7 +1894,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_DYNAMIC,  Next: OMP_MAX_ACTIVE_LEVELS,  Prev: OMP_DEFAULT_DEVICE,  Up: Environment Variables
 
-4.4 ‘OMP_DYNAMIC’ – Dynamic adjustment of threads
+4.4 ‘OMP_DYNAMIC’ - Dynamic adjustment of threads
 =================================================
 
 _Description_:
@@ -1912,7 +1912,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_MAX_ACTIVE_LEVELS,  Next: OMP_MAX_TASK_PRIORITY,  Prev: OMP_DYNAMIC,  Up: Environment Variables
 
-4.5 ‘OMP_MAX_ACTIVE_LEVELS’ – Set the maximum number of nested parallel regions
+4.5 ‘OMP_MAX_ACTIVE_LEVELS’ - Set the maximum number of nested parallel regions
 ===============================================================================
 
 _Description_:
@@ -1933,7 +1933,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_MAX_TASK_PRIORITY,  Next: OMP_NESTED,  Prev: OMP_MAX_ACTIVE_LEVELS,  Up: Environment Variables
 
-4.6 ‘OMP_MAX_TASK_PRIORITY’ – Set the maximum priority
+4.6 ‘OMP_MAX_TASK_PRIORITY’ - Set the maximum priority
 ======================================================
 
 number that can be set for a task.
@@ -1952,7 +1952,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_NESTED,  Next: OMP_NUM_TEAMS,  Prev: OMP_MAX_TASK_PRIORITY,  Up: Environment Variables
 
-4.7 ‘OMP_NESTED’ – Nested parallel regions
+4.7 ‘OMP_NESTED’ - Nested parallel regions
 ==========================================
 
 _Description_:
@@ -1976,7 +1976,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_NUM_TEAMS,  Next: OMP_NUM_THREADS,  Prev: OMP_NESTED,  Up: Environment Variables
 
-4.8 ‘OMP_NUM_TEAMS’ – Specifies the number of teams to use by teams region
+4.8 ‘OMP_NUM_TEAMS’ - Specifies the number of teams to use by teams region
 ==========================================================================
 
 _Description_:
@@ -1994,7 +1994,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_NUM_THREADS,  Next: OMP_PROC_BIND,  Prev: OMP_NUM_TEAMS,  Up: Environment Variables
 
-4.9 ‘OMP_NUM_THREADS’ – Specifies the number of threads to use
+4.9 ‘OMP_NUM_THREADS’ - Specifies the number of threads to use
 ==============================================================
 
 _Description_:
@@ -2014,7 +2014,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_PROC_BIND,  Next: OMP_PLACES,  Prev: OMP_NUM_THREADS,  Up: Environment Variables
 
-4.10 ‘OMP_PROC_BIND’ – Whether threads may be moved between CPUs
+4.10 ‘OMP_PROC_BIND’ - Whether threads may be moved between CPUs
 ================================================================
 
 _Description_:
@@ -2043,7 +2043,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_PLACES,  Next: OMP_STACKSIZE,  Prev: OMP_PROC_BIND,  Up: Environment Variables
 
-4.11 ‘OMP_PLACES’ – Specifies on which CPUs the threads should be placed
+4.11 ‘OMP_PLACES’ - Specifies on which CPUs the threads should be placed
 ========================================================================
 
 _Description_:
@@ -2071,7 +2071,7 @@ _Description_:
      a comma-separated list of places or by an interval.  To specify an
      interval, a colon followed by the count is placed after the
      hardware thread number or the place.  Optionally, the length can be
-     followed by a colon and the stride number – otherwise a unit stride
+     followed by a colon and the stride number - otherwise a unit stride
      is assumed.  Placing an exclamation mark (‘!’) directly before a
      curly brace or numbers inside the curly braces (excluding
      intervals) will exclude those hardware threads.
@@ -2094,7 +2094,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_STACKSIZE,  Next: OMP_SCHEDULE,  Prev: OMP_PLACES,  Up: Environment Variables
 
-4.12 ‘OMP_STACKSIZE’ – Set default thread stack size
+4.12 ‘OMP_STACKSIZE’ - Set default thread stack size
 ====================================================
 
 _Description_:
@@ -2113,7 +2113,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_SCHEDULE,  Next: OMP_TARGET_OFFLOAD,  Prev: OMP_STACKSIZE,  Up: Environment Variables
 
-4.13 ‘OMP_SCHEDULE’ – How threads are scheduled
+4.13 ‘OMP_SCHEDULE’ - How threads are scheduled
 ===============================================
 
 _Description_:
@@ -2133,7 +2133,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_TARGET_OFFLOAD,  Next: OMP_TEAMS_THREAD_LIMIT,  Prev: OMP_SCHEDULE,  Up: Environment Variables
 
-4.14 ‘OMP_TARGET_OFFLOAD’ – Controls offloading behaviour
+4.14 ‘OMP_TARGET_OFFLOAD’ - Controls offloading behaviour
 =========================================================
 
 _Description_:
@@ -2156,7 +2156,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_TEAMS_THREAD_LIMIT,  Next: OMP_THREAD_LIMIT,  Prev: OMP_TARGET_OFFLOAD,  Up: Environment Variables
 
-4.15 ‘OMP_TEAMS_THREAD_LIMIT’ – Set the maximum number of threads imposed by teams
+4.15 ‘OMP_TEAMS_THREAD_LIMIT’ - Set the maximum number of threads imposed by teams
 ==================================================================================
 
 _Description_:
@@ -2175,7 +2175,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_THREAD_LIMIT,  Next: OMP_WAIT_POLICY,  Prev: OMP_TEAMS_THREAD_LIMIT,  Up: Environment Variables
 
-4.16 ‘OMP_THREAD_LIMIT’ – Set the maximum number of threads
+4.16 ‘OMP_THREAD_LIMIT’ - Set the maximum number of threads
 ===========================================================
 
 _Description_:
@@ -2192,7 +2192,7 @@ _Reference_:
 
 File: libgomp.info,  Node: OMP_WAIT_POLICY,  Next: GOMP_CPU_AFFINITY,  Prev: OMP_THREAD_LIMIT,  Up: Environment Variables
 
-4.17 ‘OMP_WAIT_POLICY’ – How waiting threads are handled
+4.17 ‘OMP_WAIT_POLICY’ - How waiting threads are handled
 ========================================================
 
 _Description_:
@@ -2211,7 +2211,7 @@ _Reference_:
 
 File: libgomp.info,  Node: GOMP_CPU_AFFINITY,  Next: GOMP_DEBUG,  Prev: OMP_WAIT_POLICY,  Up: Environment Variables
 
-4.18 ‘GOMP_CPU_AFFINITY’ – Bind threads to specific CPUs
+4.18 ‘GOMP_CPU_AFFINITY’ - Bind threads to specific CPUs
 ========================================================
 
 _Description_:
@@ -2219,7 +2219,7 @@ _Description_:
      space-separated or comma-separated list of CPUs.  This list may
      contain different kinds of entries: either single CPU numbers in
      any order, a range of CPUs (M-N) or a range with some stride
-     (M-N:S). CPU numbers are zero based.  For example,
+     (M-N:S).  CPU numbers are zero based.  For example,
      ‘GOMP_CPU_AFFINITY="0 3 1-2 4-15:2"’ will bind the initial thread
      to CPU 0, the second to CPU 3, the third to CPU 1, the fourth to
      CPU 2, the fifth to CPU 4, the sixth through tenth to CPUs 6, 8,
@@ -2247,7 +2247,7 @@ _See also_:
 
 File: libgomp.info,  Node: GOMP_DEBUG,  Next: GOMP_STACKSIZE,  Prev: GOMP_CPU_AFFINITY,  Up: Environment Variables
 
-4.19 ‘GOMP_DEBUG’ – Enable debugging output
+4.19 ‘GOMP_DEBUG’ - Enable debugging output
 ===========================================
 
 _Description_:
@@ -2261,7 +2261,7 @@ _Description_:
 
 File: libgomp.info,  Node: GOMP_STACKSIZE,  Next: GOMP_SPINCOUNT,  Prev: GOMP_DEBUG,  Up: Environment Variables
 
-4.20 ‘GOMP_STACKSIZE’ – Set default thread stack size
+4.20 ‘GOMP_STACKSIZE’ - Set default thread stack size
 =====================================================
 
 _Description_:
@@ -2283,7 +2283,7 @@ _Reference_:
 
 File: libgomp.info,  Node: GOMP_SPINCOUNT,  Next: GOMP_RTEMS_THREAD_POOLS,  Prev: GOMP_STACKSIZE,  Up: Environment Variables
 
-4.21 ‘GOMP_SPINCOUNT’ – Set the busy-wait spin count
+4.21 ‘GOMP_SPINCOUNT’ - Set the busy-wait spin count
 ====================================================
 
 _Description_:
@@ -2307,7 +2307,7 @@ _See also_:
 
 File: libgomp.info,  Node: GOMP_RTEMS_THREAD_POOLS,  Prev: GOMP_SPINCOUNT,  Up: Environment Variables
 
-4.22 ‘GOMP_RTEMS_THREAD_POOLS’ – Set the RTEMS specific thread pools
+4.22 ‘GOMP_RTEMS_THREAD_POOLS’ - Set the RTEMS specific thread pools
 ====================================================================
 
 _Description_:
@@ -2447,7 +2447,7 @@ API routines for the OpenACC Profiling Interface.
 
 File: libgomp.info,  Node: acc_get_num_devices,  Next: acc_set_device_type,  Up: OpenACC Runtime Library Routines
 
-6.1 ‘acc_get_num_devices’ – Get number of devices for given device type
+6.1 ‘acc_get_num_devices’ - Get number of devices for given device type
 =======================================================================
 
 _Description_
@@ -2468,7 +2468,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_set_device_type,  Next: acc_get_device_type,  Prev: acc_get_num_devices,  Up: OpenACC Runtime Library Routines
 
-6.2 ‘acc_set_device_type’ – Set type of device accelerator to use.
+6.2 ‘acc_set_device_type’ - Set type of device accelerator to use.
 ==================================================================
 
 _Description_
@@ -2490,7 +2490,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_get_device_type,  Next: acc_set_device_num,  Prev: acc_set_device_type,  Up: OpenACC Runtime Library Routines
 
-6.3 ‘acc_get_device_type’ – Get type of device accelerator to be used.
+6.3 ‘acc_get_device_type’ - Get type of device accelerator to be used.
 ======================================================================
 
 _Description_
@@ -2517,7 +2517,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_set_device_num,  Next: acc_get_device_num,  Prev: acc_get_device_type,  Up: OpenACC Runtime Library Routines
 
-6.4 ‘acc_set_device_num’ – Set device number to use.
+6.4 ‘acc_set_device_num’ - Set device number to use.
 ====================================================
 
 _Description_
@@ -2541,7 +2541,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_get_device_num,  Next: acc_get_property,  Prev: acc_set_device_num,  Up: OpenACC Runtime Library Routines
 
-6.5 ‘acc_get_device_num’ – Get device number to be used.
+6.5 ‘acc_get_device_num’ - Get device number to be used.
 ========================================================
 
 _Description_
@@ -2564,7 +2564,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_get_property,  Next: acc_async_test,  Prev: acc_get_device_num,  Up: OpenACC Runtime Library Routines
 
-6.6 ‘acc_get_property’ – Get device property.
+6.6 ‘acc_get_property’ - Get device property.
 =============================================
 
 _Description_
@@ -2611,7 +2611,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_async_test,  Next: acc_async_test_all,  Prev: acc_get_property,  Up: OpenACC Runtime Library Routines
 
-6.7 ‘acc_async_test’ – Test for completion of a specific asynchronous operation.
+6.7 ‘acc_async_test’ - Test for completion of a specific asynchronous operation.
 ================================================================================
 
 _Description_
@@ -2636,7 +2636,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_async_test_all,  Next: acc_wait,  Prev: acc_async_test,  Up: OpenACC Runtime Library Routines
 
-6.8 ‘acc_async_test_all’ – Tests for completion of all asynchronous operations.
+6.8 ‘acc_async_test_all’ - Tests for completion of all asynchronous operations.
 ===============================================================================
 
 _Description_
@@ -2660,7 +2660,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_wait,  Next: acc_wait_all,  Prev: acc_async_test_all,  Up: OpenACC Runtime Library Routines
 
-6.9 ‘acc_wait’ – Wait for completion of a specific asynchronous operation.
+6.9 ‘acc_wait’ - Wait for completion of a specific asynchronous operation.
 ==========================================================================
 
 _Description_
@@ -2688,7 +2688,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_wait_all,  Next: acc_wait_all_async,  Prev: acc_wait,  Up: OpenACC Runtime Library Routines
 
-6.10 ‘acc_wait_all’ – Waits for completion of all asynchronous operations.
+6.10 ‘acc_wait_all’ - Waits for completion of all asynchronous operations.
 ==========================================================================
 
 _Description_
@@ -2714,7 +2714,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_wait_all_async,  Next: acc_wait_async,  Prev: acc_wait_all,  Up: OpenACC Runtime Library Routines
 
-6.11 ‘acc_wait_all_async’ – Wait for completion of all asynchronous operations.
+6.11 ‘acc_wait_all_async’ - Wait for completion of all asynchronous operations.
 ===============================================================================
 
 _Description_
@@ -2736,7 +2736,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_wait_async,  Next: acc_init,  Prev: acc_wait_all_async,  Up: OpenACC Runtime Library Routines
 
-6.12 ‘acc_wait_async’ – Wait for completion of asynchronous operations.
+6.12 ‘acc_wait_async’ - Wait for completion of asynchronous operations.
 =======================================================================
 
 _Description_
@@ -2757,7 +2757,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_init,  Next: acc_shutdown,  Prev: acc_wait_async,  Up: OpenACC Runtime Library Routines
 
-6.13 ‘acc_init’ – Initialize runtime for a specific device type.
+6.13 ‘acc_init’ - Initialize runtime for a specific device type.
 ================================================================
 
 _Description_
@@ -2778,7 +2778,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_shutdown,  Next: acc_on_device,  Prev: acc_init,  Up: OpenACC Runtime Library Routines
 
-6.14 ‘acc_shutdown’ – Shuts down the runtime for a specific device type.
+6.14 ‘acc_shutdown’ - Shuts down the runtime for a specific device type.
 ========================================================================
 
 _Description_
@@ -2799,7 +2799,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_on_device,  Next: acc_malloc,  Prev: acc_shutdown,  Up: OpenACC Runtime Library Routines
 
-6.15 ‘acc_on_device’ – Whether executing on a particular device
+6.15 ‘acc_on_device’ - Whether executing on a particular device
 ===============================================================
 
 _Description_:
@@ -2825,7 +2825,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_malloc,  Next: acc_free,  Prev: acc_on_device,  Up: OpenACC Runtime Library Routines
 
-6.16 ‘acc_malloc’ – Allocate device memory.
+6.16 ‘acc_malloc’ - Allocate device memory.
 ===========================================
 
 _Description_
@@ -2842,7 +2842,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_free,  Next: acc_copyin,  Prev: acc_malloc,  Up: OpenACC Runtime Library Routines
 
-6.17 ‘acc_free’ – Free device memory.
+6.17 ‘acc_free’ - Free device memory.
 =====================================
 
 _Description_
@@ -2858,7 +2858,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_copyin,  Next: acc_present_or_copyin,  Prev: acc_free,  Up: OpenACC Runtime Library Routines
 
-6.18 ‘acc_copyin’ – Allocate device memory and copy host memory to it.
+6.18 ‘acc_copyin’ - Allocate device memory and copy host memory to it.
 ======================================================================
 
 _Description_
@@ -2896,7 +2896,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_present_or_copyin,  Next: acc_create,  Prev: acc_copyin,  Up: OpenACC Runtime Library Routines
 
-6.19 ‘acc_present_or_copyin’ – If the data is not present on the device, allocate device memory and copy from host memory.
+6.19 ‘acc_present_or_copyin’ - If the data is not present on the device, allocate device memory and copy from host memory.
 ==========================================================================================================================
 
 _Description_
@@ -2936,7 +2936,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_create,  Next: acc_present_or_create,  Prev: acc_present_or_copyin,  Up: OpenACC Runtime Library Routines
 
-6.20 ‘acc_create’ – Allocate device memory and map it to host memory.
+6.20 ‘acc_create’ - Allocate device memory and map it to host memory.
 =====================================================================
 
 _Description_
@@ -2975,7 +2975,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_present_or_create,  Next: acc_copyout,  Prev: acc_create,  Up: OpenACC Runtime Library Routines
 
-6.21 ‘acc_present_or_create’ – If the data is not present on the device, allocate device memory and map it to host memory.
+6.21 ‘acc_present_or_create’ - If the data is not present on the device, allocate device memory and map it to host memory.
 ==========================================================================================================================
 
 _Description_
@@ -3015,7 +3015,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_copyout,  Next: acc_delete,  Prev: acc_present_or_create,  Up: OpenACC Runtime Library Routines
 
-6.22 ‘acc_copyout’ – Copy device memory to host memory.
+6.22 ‘acc_copyout’ - Copy device memory to host memory.
 =======================================================
 
 _Description_
@@ -3066,7 +3066,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_delete,  Next: acc_update_device,  Prev: acc_copyout,  Up: OpenACC Runtime Library Routines
 
-6.23 ‘acc_delete’ – Free device memory.
+6.23 ‘acc_delete’ - Free device memory.
 =======================================
 
 _Description_
@@ -3117,7 +3117,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_update_device,  Next: acc_update_self,  Prev: acc_delete,  Up: OpenACC Runtime Library Routines
 
-6.24 ‘acc_update_device’ – Update device memory from mapped host memory.
+6.24 ‘acc_update_device’ - Update device memory from mapped host memory.
 ========================================================================
 
 _Description_
@@ -3154,7 +3154,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_update_self,  Next: acc_map_data,  Prev: acc_update_device,  Up: OpenACC Runtime Library Routines
 
-6.25 ‘acc_update_self’ – Update host memory from mapped device memory.
+6.25 ‘acc_update_self’ - Update host memory from mapped device memory.
 ======================================================================
 
 _Description_
@@ -3192,7 +3192,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_map_data,  Next: acc_unmap_data,  Prev: acc_update_self,  Up: OpenACC Runtime Library Routines
 
-6.26 ‘acc_map_data’ – Map previously allocated device memory to host memory.
+6.26 ‘acc_map_data’ - Map previously allocated device memory to host memory.
 ============================================================================
 
 _Description_
@@ -3210,7 +3210,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_unmap_data,  Next: acc_deviceptr,  Prev: acc_map_data,  Up: OpenACC Runtime Library Routines
 
-6.27 ‘acc_unmap_data’ – Unmap device memory from host memory.
+6.27 ‘acc_unmap_data’ - Unmap device memory from host memory.
 =============================================================
 
 _Description_
@@ -3227,7 +3227,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_deviceptr,  Next: acc_hostptr,  Prev: acc_unmap_data,  Up: OpenACC Runtime Library Routines
 
-6.28 ‘acc_deviceptr’ – Get device pointer associated with specific host address.
+6.28 ‘acc_deviceptr’ - Get device pointer associated with specific host address.
 ================================================================================
 
 _Description_
@@ -3244,7 +3244,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_hostptr,  Next: acc_is_present,  Prev: acc_deviceptr,  Up: OpenACC Runtime Library Routines
 
-6.29 ‘acc_hostptr’ – Get host pointer associated with specific device address.
+6.29 ‘acc_hostptr’ - Get host pointer associated with specific device address.
 ==============================================================================
 
 _Description_
@@ -3261,7 +3261,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_is_present,  Next: acc_memcpy_to_device,  Prev: acc_hostptr,  Up: OpenACC Runtime Library Routines
 
-6.30 ‘acc_is_present’ – Indicate whether host variable / array is present on device.
+6.30 ‘acc_is_present’ - Indicate whether host variable / array is present on device.
 ====================================================================================
 
 _Description_
@@ -3297,7 +3297,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_memcpy_to_device,  Next: acc_memcpy_from_device,  Prev: acc_is_present,  Up: OpenACC Runtime Library Routines
 
-6.31 ‘acc_memcpy_to_device’ – Copy host memory to device memory.
+6.31 ‘acc_memcpy_to_device’ - Copy host memory to device memory.
 ================================================================
 
 _Description_
@@ -3316,7 +3316,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_memcpy_from_device,  Next: acc_attach,  Prev: acc_memcpy_to_device,  Up: OpenACC Runtime Library Routines
 
-6.32 ‘acc_memcpy_from_device’ – Copy device memory to host memory.
+6.32 ‘acc_memcpy_from_device’ - Copy device memory to host memory.
 ==================================================================
 
 _Description_
@@ -3335,7 +3335,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_attach,  Next: acc_detach,  Prev: acc_memcpy_from_device,  Up: OpenACC Runtime Library Routines
 
-6.33 ‘acc_attach’ – Let device pointer point to device-pointer target.
+6.33 ‘acc_attach’ - Let device pointer point to device-pointer target.
 ======================================================================
 
 _Description_
@@ -3353,7 +3353,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_detach,  Next: acc_get_current_cuda_device,  Prev: acc_attach,  Up: OpenACC Runtime Library Routines
 
-6.34 ‘acc_detach’ – Let device pointer point to host-pointer target.
+6.34 ‘acc_detach’ - Let device pointer point to host-pointer target.
 ====================================================================
 
 _Description_
@@ -3373,12 +3373,12 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_get_current_cuda_device,  Next: acc_get_current_cuda_context,  Prev: acc_detach,  Up: OpenACC Runtime Library Routines
 
-6.35 ‘acc_get_current_cuda_device’ – Get CUDA device handle.
+6.35 ‘acc_get_current_cuda_device’ - Get CUDA device handle.
 ============================================================
 
 _Description_
      This function returns the CUDA device handle.  This handle is the
-     same as used by the CUDA Runtime or Driver API’s.
+     same as used by the CUDA Runtime or Driver API's.
 
 _C/C++_:
      _Prototype_:   ‘void *acc_get_current_cuda_device(void);’
@@ -3390,12 +3390,12 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_get_current_cuda_context,  Next: acc_get_cuda_stream,  Prev: acc_get_current_cuda_device,  Up: OpenACC Runtime Library Routines
 
-6.36 ‘acc_get_current_cuda_context’ – Get CUDA context handle.
+6.36 ‘acc_get_current_cuda_context’ - Get CUDA context handle.
 ==============================================================
 
 _Description_
      This function returns the CUDA context handle.  This handle is the
-     same as used by the CUDA Runtime or Driver API’s.
+     same as used by the CUDA Runtime or Driver API's.
 
 _C/C++_:
      _Prototype_:   ‘void *acc_get_current_cuda_context(void);’
@@ -3407,13 +3407,13 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_get_cuda_stream,  Next: acc_set_cuda_stream,  Prev: acc_get_current_cuda_context,  Up: OpenACC Runtime Library Routines
 
-6.37 ‘acc_get_cuda_stream’ – Get CUDA stream handle.
+6.37 ‘acc_get_cuda_stream’ - Get CUDA stream handle.
 ====================================================
 
 _Description_
      This function returns the CUDA stream handle for the queue ASYNC.
      This handle is the same as used by the CUDA Runtime or Driver
-     API’s.
+     API's.
 
 _C/C++_:
      _Prototype_:   ‘void *acc_get_cuda_stream(int async);’
@@ -3425,7 +3425,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_set_cuda_stream,  Next: acc_prof_register,  Prev: acc_get_cuda_stream,  Up: OpenACC Runtime Library Routines
 
-6.38 ‘acc_set_cuda_stream’ – Set CUDA stream handle.
+6.38 ‘acc_set_cuda_stream’ - Set CUDA stream handle.
 ====================================================
 
 _Description_
@@ -3447,7 +3447,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_prof_register,  Next: acc_prof_unregister,  Prev: acc_set_cuda_stream,  Up: OpenACC Runtime Library Routines
 
-6.39 ‘acc_prof_register’ – Register callbacks.
+6.39 ‘acc_prof_register’ - Register callbacks.
 ==============================================
 
 _Description_:
@@ -3466,7 +3466,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_prof_unregister,  Next: acc_prof_lookup,  Prev: acc_prof_register,  Up: OpenACC Runtime Library Routines
 
-6.40 ‘acc_prof_unregister’ – Unregister callbacks.
+6.40 ‘acc_prof_unregister’ - Unregister callbacks.
 ==================================================
 
 _Description_:
@@ -3485,7 +3485,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_prof_lookup,  Next: acc_register_library,  Prev: acc_prof_unregister,  Up: OpenACC Runtime Library Routines
 
-6.41 ‘acc_prof_lookup’ – Obtain inquiry functions.
+6.41 ‘acc_prof_lookup’ - Obtain inquiry functions.
 ==================================================
 
 _Description_:
@@ -3503,7 +3503,7 @@ _Reference_:
 
 File: libgomp.info,  Node: acc_register_library,  Prev: acc_prof_lookup,  Up: OpenACC Runtime Library Routines
 
-6.42 ‘acc_register_library’ – Library registration.
+6.42 ‘acc_register_library’ - Library registration.
 ===================================================
 
 _Description_:
@@ -3793,9 +3793,9 @@ File: libgomp.info,  Node: OpenACC Profiling Interface,  Next: OpenMP-Implementa
 10.1 Implementation Status and Implementation-Defined Behavior
 ==============================================================
 
-We’re implementing the OpenACC Profiling Interface as defined by the
-OpenACC 2.6 specification.  We’re clarifying some aspects here as
-_implementation-defined behavior_, while they’re still under discussion
+We're implementing the OpenACC Profiling Interface as defined by the
+OpenACC 2.6 specification.  We're clarifying some aspects here as
+_implementation-defined behavior_, while they're still under discussion
 within the OpenACC Technical Committee.
 
    This implementation is tuned to keep the performance impact as low as
@@ -3808,13 +3808,13 @@ has gotten enabled: for example, because of the _runtime_ (libgomp)
 calling into a third-party _library_ for every event that has been
 registered.
 
-   We’re not yet accounting for the fact that ‘OpenACC events may occur
+   We're not yet accounting for the fact that ‘OpenACC events may occur
 during event processing’.  We just handle one case specially, as
 required by CUDA 9.0 ‘nvprof’, that ‘acc_get_device_type’ (*note
 acc_get_device_type::)) may be called from ‘acc_ev_device_init_start’,
 ‘acc_ev_device_init_end’ callbacks.
 
-   We’re not yet implementing initialization via a
+   We're not yet implementing initialization via a
 ‘acc_register_library’ function that is either statically linked in, or
 dynamically via ‘LD_PRELOAD’.  Initialization via ‘acc_register_library’
 functions dynamically loaded via the ‘ACC_PROFLIB’ environment variable
@@ -3824,15 +3824,15 @@ does work, as does directly calling ‘acc_prof_register’,
    As currently there are no inquiry functions defined, calls to
 ‘acc_prof_lookup’ will always return ‘NULL’.
 
-   There aren’t separate _start_, _stop_ events defined for the event
+   There aren't separate _start_, _stop_ events defined for the event
 types ‘acc_ev_create’, ‘acc_ev_delete’, ‘acc_ev_alloc’, ‘acc_ev_free’.
-It’s not clear if these should be triggered before or after the actual
+It's not clear if these should be triggered before or after the actual
 device-specific call is made.  We trigger them after.
 
    Remarks about data provided to callbacks:
 
 ‘acc_prof_info.event_type’
-     It’s not clear if for _nested_ event callbacks (for example,
+     It's not clear if for _nested_ event callbacks (for example,
      ‘acc_ev_enqueue_launch_start’ as part of a parent compute
      construct), this should be set for the nested event
      (‘acc_ev_enqueue_launch_start’), or if the value of the parent
@@ -3844,13 +3844,13 @@ device-specific call is made.  We trigger them after.
 
         • For ‘acc_ev_compute_construct_start’, and in presence of an
           ‘if’ clause with _false_ argument, this will still refer to
-          the offloading device type.  It’s not clear if that’s the
+          the offloading device type.  It's not clear if that's the
           expected behavior.
 
         • Complementary to the item before, for
           ‘acc_ev_compute_construct_end’, this is set to
           ‘acc_device_host’ in presence of an ‘if’ clause with _false_
-          argument.  It’s not clear if that’s the expected behavior.
+          argument.  It's not clear if that's the expected behavior.
 
 ‘acc_prof_info.thread_id’
      Always ‘-1’; not yet implemented.
@@ -3862,11 +3862,11 @@ device-specific call is made.  We trigger them after.
 
         • In a compute construct, for host-fallback
           execution/‘acc_device_host’ it will always be
-          ‘acc_async_sync’.  It’s not clear if that’s the expected
+          ‘acc_async_sync’.  It's not clear if that's the expected
           behavior.
 
         • For ‘acc_ev_device_init_start’ and ‘acc_ev_device_init_end’,
-          it will always be ‘acc_async_sync’.  It’s not clear if that’s
+          it will always be ‘acc_async_sync’.  It's not clear if that's
           the expected behavior.
 
 ‘acc_prof_info.async_queue’
@@ -3961,27 +3961,27 @@ device-specific call is made.  We trigger them after.
 
         • When a compute construct triggers implicit
           ‘acc_ev_device_init_start’ and ‘acc_ev_device_init_end’
-          events, they currently aren’t _nested within_ the
+          events, they currently aren't _nested within_ the
           corresponding ‘acc_ev_compute_construct_start’ and
-          ‘acc_ev_compute_construct_end’, but they’re currently observed
-          _before_ ‘acc_ev_compute_construct_start’.  It’s not clear
+          ‘acc_ev_compute_construct_end’, but they're currently observed
+          _before_ ‘acc_ev_compute_construct_start’.  It's not clear
           what to do: the standard asks us provide a lot of details to
           the ‘acc_ev_compute_construct_start’ callback, without
           (implicitly) initializing a device before?
 
         • Callbacks for these event types will not be invoked for calls
           to the ‘acc_set_device_type’ and ‘acc_set_device_num’
-          functions.  It’s not clear if they should be.
+          functions.  It's not clear if they should be.
 
 ‘acc_ev_enter_data_start’, ‘acc_ev_enter_data_end’, ‘acc_ev_exit_data_start’, ‘acc_ev_exit_data_end’
 
         • Callbacks for these event types will also be invoked for
-          OpenACC _host_data_ constructs.  It’s not clear if they should
+          OpenACC _host_data_ constructs.  It's not clear if they should
           be.
 
         • Callbacks for these event types will also be invoked when
           processing variable mappings specified in OpenACC _declare_
-          directives.  It’s not clear if they should be.
+          directives.  It's not clear if they should be.
 
    Callbacks for the following event types will be invoked, but dispatch
 and information provided therein has not yet been thoroughly reviewed:
@@ -3999,7 +3999,7 @@ callbacks for the following event types will not yet be invoked:
    • ‘acc_ev_free’
 
    Callbacks for the following event types have not yet been
-implemented, so currently won’t be invoked:
+implemented, so currently won't be invoked:
 
    • ‘acc_ev_device_shutdown_start’, ‘acc_ev_device_shutdown_end’
    • ‘acc_ev_runtime_shutdown’
@@ -4020,7 +4020,7 @@ initialization):
 
    Aside from implicit device initialization, for the following runtime
 library functions, no callbacks will be invoked for shared-memory
-offloading devices (it’s not clear if they should be):
+offloading devices (it's not clear if they should be):
 
    • ‘acc_malloc’
    • ‘acc_free’
@@ -4058,15 +4058,15 @@ File: libgomp.info,  Node: OpenMP Context Selectors,  Next: Memory allocation wi
 ‘arch’                                      ‘kind’  ‘isa’
 -----------------------------------------------------------------------
 ‘x86’, ‘x86_64’, ‘i386’, ‘i486’, ‘i586’,    ‘host’  See ‘-m...’
-‘i686’, ‘ia32’                                      flags in “x86
-                                                    Options”
+‘i686’, ‘ia32’                                      flags in "x86
+                                                    Options"
                                                     (without ‘-m’)
 ‘amdgcn’, ‘gcn’                             ‘gpu’   See ‘-march=’ in
-                                                    “AMD GCN
-                                                    Options”(1)
+                                                    "AMD GCN
+                                                    Options"(1)
 ‘nvptx’                                     ‘gpu’   See ‘-march=’ in
-                                                    “Nvidia PTX
-                                                    Options”
+                                                    "Nvidia PTX
+                                                    Options"
 
    ---------- Footnotes ----------
 
@@ -4112,10 +4112,10 @@ On the hardware side, there is the hierarchy (fine to coarse):
    • compute unit (CU)
 
    All OpenMP and OpenACC levels are used, i.e.
-   • OpenMP’s simd and OpenACC’s vector map to work items (thread)
-   • OpenMP’s threads (“parallel”) and OpenACC’s workers map to
+   • OpenMP's simd and OpenACC's vector map to work items (thread)
+   • OpenMP's threads ("parallel") and OpenACC's workers map to
      wavefronts
-   • OpenMP’s teams and OpenACC’s gang use a threadpool with the size of
+   • OpenMP's teams and OpenACC's gang use a threadpool with the size of
      the number of teams or gangs, respectively.
 
    The used sizes are
@@ -4146,7 +4146,7 @@ On the hardware side, there is the hierarchy (fine to coarse):
      the previous one returned.
    • OpenMP code that has a requires directive with ‘unified_address’ or
      ‘unified_shared_memory’ will remove any GCN device from the list of
-     available devices (“host fallback”).
+     available devices ("host fallback").
    • The available stack size can be changed using the ‘GCN_STACK_SIZE’
      environment variable; the default is 32 kiB per thread.
 
@@ -4163,9 +4163,9 @@ On the hardware side, there is the hierarchy (fine to coarse):
    • streaming multiprocessor
 
    All OpenMP and OpenACC levels are used, i.e.
-   • OpenMP’s simd and OpenACC’s vector map to threads
-   • OpenMP’s threads (“parallel”) and OpenACC’s workers map to warps
-   • OpenMP’s teams and OpenACC’s gang use a threadpool with the size of
+   • OpenMP's simd and OpenACC's vector map to threads
+   • OpenMP's threads ("parallel") and OpenACC's workers map to warps
+   • OpenMP's teams and OpenACC's gang use a threadpool with the size of
      the number of teams or gangs, respectively.
 
    The used sizes are
@@ -4180,7 +4180,7 @@ variable to ‘GOMP_DEBUG=1’ (very verbose; grep for ‘kernel.*launch’ for
 launch parameters).
 
    GCC generates generic PTX ISA code, which is just-in-time compiled by
-CUDA, which caches the JIT in the user’s directory (see CUDA
+CUDA, which caches the JIT in the user's directory (see CUDA
 documentation; can be tuned by the environment variables
 ‘CUDA_CACHE_{DISABLE,MAXSIZE,PATH}’.
 
@@ -4203,7 +4203,7 @@ requirements on CUDA version and hardware.
      one returned.
    • OpenMP code that has a requires directive with ‘unified_address’ or
      ‘unified_shared_memory’ will remove any nvptx device from the list
-     of available devices (“host fallback”).
+     of available devices ("host fallback").
 
 
 File: libgomp.info,  Node: The libgomp ABI,  Next: Reporting Bugs,  Prev: Offload-Target Specifics,  Up: Top
@@ -4256,7 +4256,7 @@ Without a specified name,
        void GOMP_critical_start (void);
        void GOMP_critical_end (void);
 
-   so that we don’t get COPY relocations from libgomp to the main
+   so that we don't get COPY relocations from libgomp to the main
 application.
 
    With a specified name, use omp_set_lock and omp_unset_lock with name
@@ -4265,7 +4265,7 @@ being transformed into a variable declared like
        omp_lock_t gomp_critical_user_<name> __attribute__((common))
 
    Ideally the ABI would specify that all zero is a valid unlocked
-state, and so we wouldn’t need to initialize this at startup.
+state, and so we wouldn't need to initialize this at startup.
 
 
 File: libgomp.info,  Node: Implementing ATOMIC construct,  Next: Implementing FLUSH construct,  Prev: Implementing CRITICAL construct,  Up: The libgomp ABI
@@ -4360,7 +4360,7 @@ thing I can figure is that we do something like:
 
    where the "x=x" and "y=y" assignments actually have different uids
 for the two variables, i.e.  not something you could write directly in
-C. Presumably this only makes sense if the "outer" x and y are global
+C.  Presumably this only makes sense if the "outer" x and y are global
 variables.
 
    COPYPRIVATE would work the same way, except the structure broadcast
@@ -4373,7 +4373,7 @@ File: libgomp.info,  Node: Implementing REDUCTION clause,  Next: Implementing PA
 ==================================
 
 The private struct mentioned in the previous section should have a
-pointer to an array of the type of the variable, indexed by the thread’s
+pointer to an array of the type of the variable, indexed by the thread's
 TEAM_ID.  The thread stores its final value into the array, and after
 the barrier, the primary thread iterates over the array to collect the
 values.
@@ -4468,7 +4468,7 @@ File: libgomp.info,  Node: Implementing FOR construct,  Next: Implementing ORDER
        }
 
    Note that while it looks like there is trickiness to propagating a
-non-constant STEP, there isn’t really.  We’re explicitly allowed to
+non-constant STEP, there isn't really.  We're explicitly allowed to
 evaluate it as many times as we want, and any variables involved should
 automatically be handled as PRIVATE or SHARED like any other variables.
 So the expression should remain evaluable in the subfunction.  We can
@@ -4478,7 +4478,7 @@ remain unchanged, we can also not if we like.
    If we have SCHEDULE(STATIC), and no ORDERED, then we ought to be able
 to get away with no work-sharing context at all, since we can simply
 perform the arithmetic directly in each thread to divide up the
-iterations.  Which would mean that we wouldn’t need to call any of these
+iterations.  Which would mean that we wouldn't need to call any of these
 routines.
 
    There are separate routines for handling loops with an ORDERED
@@ -4568,7 +4568,7 @@ A block like
 
 File: libgomp.info,  Node: Implementing OpenACC's PARALLEL construct,  Prev: Implementing SINGLE construct,  Up: The libgomp ABI
 
-13.15 Implementing OpenACC’s PARALLEL construct
+13.15 Implementing OpenACC's PARALLEL construct
 ===============================================
 
        void GOACC_parallel ()
@@ -4606,7 +4606,7 @@ and other kinds of works.
    The licenses for most software and other practical works are designed
 to take away your freedom to share and change the works.  By contrast,
 the GNU General Public License is intended to guarantee your freedom to
-share and change all versions of a program–to make sure it remains free
+share and change all versions of a program-to make sure it remains free
 software for all its users.  We, the Free Software Foundation, use the
 GNU General Public License for most of our software; it applies also to
 any other work released this way by its authors.  You can apply it to
@@ -4634,16 +4634,16 @@ know their rights.
 (1) assert copyright on the software, and (2) offer you this License
 giving you legal permission to copy, distribute and/or modify it.
 
-   For the developers’ and authors’ protection, the GPL clearly explains
-that there is no warranty for this free software.  For both users’ and
-authors’ sake, the GPL requires that modified versions be marked as
+   For the developers' and authors' protection, the GPL clearly explains
+that there is no warranty for this free software.  For both users' and
+authors' sake, the GPL requires that modified versions be marked as
 changed, so that their problems will not be attributed erroneously to
 authors of previous versions.
 
    Some devices are designed to deny users access to install or run
 modified versions of the software inside them, although the manufacturer
 can do so.  This is fundamentally incompatible with the aim of
-protecting users’ freedom to change the software.  The systematic
+protecting users' freedom to change the software.  The systematic
 pattern of such abuse occurs in the area of products for individuals to
 use, which is precisely where it is most unacceptable.  Therefore, we
 have designed this version of the GPL to prohibit the practice for those
@@ -4666,25 +4666,25 @@ TERMS AND CONDITIONS
 
   0. Definitions.
 
-     “This License” refers to version 3 of the GNU General Public
+     "This License" refers to version 3 of the GNU General Public
      License.
 
-     “Copyright” also means copyright-like laws that apply to other
+     "Copyright" also means copyright-like laws that apply to other
      kinds of works, such as semiconductor masks.
 
-     “The Program” refers to any copyrightable work licensed under this
-     License.  Each licensee is addressed as “you”.  “Licensees” and
-     “recipients” may be individuals or organizations.
+     "The Program" refers to any copyrightable work licensed under this
+     License.  Each licensee is addressed as "you".  "Licensees" and
+     "recipients" may be individuals or organizations.
 
-     To “modify” a work means to copy from or adapt all or part of the
+     To "modify" a work means to copy from or adapt all or part of the
      work in a fashion requiring copyright permission, other than the
-     making of an exact copy.  The resulting work is called a “modified
-     version” of the earlier work or a work “based on” the earlier work.
+     making of an exact copy.  The resulting work is called a "modified
+     version" of the earlier work or a work "based on" the earlier work.
 
-     A “covered work” means either the unmodified Program or a work
+     A "covered work" means either the unmodified Program or a work
      based on the Program.
 
-     To “propagate” a work means to do anything with it that, without
+     To "propagate" a work means to do anything with it that, without
      permission, would make you directly or secondarily liable for
      infringement under applicable copyright law, except executing it on
      a computer or modifying a private copy.  Propagation includes
@@ -4692,12 +4692,12 @@ TERMS AND CONDITIONS
      available to the public, and in some countries other activities as
      well.
 
-     To “convey” a work means any kind of propagation that enables other
+     To "convey" a work means any kind of propagation that enables other
      parties to make or receive copies.  Mere interaction with a user
      through a computer network, with no transfer of a copy, is not
      conveying.
 
-     An interactive user interface displays “Appropriate Legal Notices”
+     An interactive user interface displays "Appropriate Legal Notices"
      to the extent that it includes a convenient and prominently visible
      feature that (1) displays an appropriate copyright notice, and (2)
      tells the user that there is no warranty for the work (except to
@@ -4709,33 +4709,33 @@ TERMS AND CONDITIONS
 
   1. Source Code.
 
-     The “source code” for a work means the preferred form of the work
-     for making modifications to it.  “Object code” means any non-source
+     The "source code" for a work means the preferred form of the work
+     for making modifications to it.  "Object code" means any non-source
      form of a work.
 
-     A “Standard Interface” means an interface that either is an
+     A "Standard Interface" means an interface that either is an
      official standard defined by a recognized standards body, or, in
      the case of interfaces specified for a particular programming
      language, one that is widely used among developers working in that
      language.
 
-     The “System Libraries” of an executable work include anything,
+     The "System Libraries" of an executable work include anything,
      other than the work as a whole, that (a) is included in the normal
      form of packaging a Major Component, but which is not part of that
      Major Component, and (b) serves only to enable use of the work with
      that Major Component, or to implement a Standard Interface for
      which an implementation is available to the public in source code
-     form.  A “Major Component”, in this context, means a major
+     form.  A "Major Component", in this context, means a major
      essential component (kernel, window system, and so on) of the
      specific operating system (if any) on which the executable work
      runs, or a compiler used to produce the work, or an object code
      interpreter used to run it.
 
-     The “Corresponding Source” for a work in object code form means all
+     The "Corresponding Source" for a work in object code form means all
      the source code needed to generate, install, and (for an executable
      work) run the object code and to modify the work, including scripts
      to control those activities.  However, it does not include the
-     work’s System Libraries, or general-purpose tools or generally
+     work's System Libraries, or general-purpose tools or generally
      available free programs which are used unmodified in performing
      those activities but which are not part of the work.  For example,
      Corresponding Source includes interface definition files associated
@@ -4779,7 +4779,7 @@ TERMS AND CONDITIONS
      the conditions stated below.  Sublicensing is not allowed; section
      10 makes it unnecessary.
 
-  3. Protecting Users’ Legal Rights From Anti-Circumvention Law.
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
 
      No covered work shall be deemed part of an effective technological
      measure under any applicable law fulfilling obligations under
@@ -4792,12 +4792,12 @@ TERMS AND CONDITIONS
      circumvention is effected by exercising rights under this License
      with respect to the covered work, and you disclaim any intention to
      limit operation or modification of the work as a means of
-     enforcing, against the work’s users, your or third parties’ legal
+     enforcing, against the work's users, your or third parties' legal
      rights to forbid circumvention of technological measures.
 
   4. Conveying Verbatim Copies.
 
-     You may convey verbatim copies of the Program’s source code as you
+     You may convey verbatim copies of the Program's source code as you
      receive it, in any medium, provided that you conspicuously and
      appropriately publish on each copy an appropriate copyright notice;
      keep intact all notices stating that this License and any
@@ -4821,7 +4821,7 @@ TERMS AND CONDITIONS
        b. The work must carry prominent notices stating that it is
           released under this License and any conditions added under
           section 7.  This requirement modifies the requirement in
-          section 4 to “keep intact all notices”.
+          section 4 to "keep intact all notices".
 
        c. You must license the entire work, as a whole, under this
           License to anyone who comes into possession of a copy.  This
@@ -4841,9 +4841,9 @@ TERMS AND CONDITIONS
      works, which are not by their nature extensions of the covered
      work, and which are not combined with it such as to form a larger
      program, in or on a volume of a storage or distribution medium, is
-     called an “aggregate” if the compilation and its resulting
+     called an "aggregate" if the compilation and its resulting
      copyright are not used to limit the access or legal rights of the
-     compilation’s users beyond what the individual works permit.
+     compilation's users beyond what the individual works permit.
      Inclusion of a covered work in an aggregate does not cause this
      License to apply to the other parts of the aggregate.
 
@@ -4901,13 +4901,13 @@ TERMS AND CONDITIONS
      excluded from the Corresponding Source as a System Library, need
      not be included in conveying the object code work.
 
-     A “User Product” is either (1) a “consumer product”, which means
+     A "User Product" is either (1) a "consumer product", which means
      any tangible personal property which is normally used for personal,
      family, or household purposes, or (2) anything designed or sold for
      incorporation into a dwelling.  In determining whether a product is
      a consumer product, doubtful cases shall be resolved in favor of
      coverage.  For a particular product received by a particular user,
-     “normally used” refers to a typical or common use of that class of
+     "normally used" refers to a typical or common use of that class of
      product, regardless of the status of the particular user or of the
      way in which the particular user actually uses, or expects or is
      expected to use, the product.  A product is a consumer product
@@ -4915,7 +4915,7 @@ TERMS AND CONDITIONS
      industrial or non-consumer uses, unless such uses represent the
      only significant mode of use of the product.
 
-     “Installation Information” for a User Product means any methods,
+     "Installation Information" for a User Product means any methods,
      procedures, authorization keys, or other information required to
      install and execute modified versions of a covered work in that
      User Product from a modified version of its Corresponding Source.
@@ -4951,7 +4951,7 @@ TERMS AND CONDITIONS
 
   7. Additional Terms.
 
-     “Additional permissions” are terms that supplement the terms of
+     "Additional permissions" are terms that supplement the terms of
      this License by making exceptions from one or more of its
      conditions.  Additional permissions that are applicable to the
      entire Program shall be treated as though they were included in
@@ -4996,8 +4996,8 @@ TERMS AND CONDITIONS
           the recipient, for any liability that these contractual
           assumptions directly impose on those licensors and authors.
 
-     All other non-permissive additional terms are considered “further
-     restrictions” within the meaning of section 10.  If the Program as
+     All other non-permissive additional terms are considered "further
+     restrictions" within the meaning of section 10.  If the Program as
      you received it, or any part of it, contains a notice stating that
      it is governed by this License along with a term that is a further
      restriction, you may remove that term.  If a license document
@@ -5063,12 +5063,12 @@ TERMS AND CONDITIONS
      responsible for enforcing compliance by third parties with this
      License.
 
-     An “entity transaction” is a transaction transferring control of an
+     An "entity transaction" is a transaction transferring control of an
      organization, or substantially all assets of one, or subdividing an
      organization, or merging organizations.  If propagation of a
      covered work results from an entity transaction, each party to that
      transaction who receives a copy of the work also receives whatever
-     licenses to the work the party’s predecessor in interest had or
+     licenses to the work the party's predecessor in interest had or
      could give under the previous paragraph, plus a right to possession
      of the Corresponding Source of the work from the predecessor in
      interest, if the predecessor has it or can get it with reasonable
@@ -5085,31 +5085,31 @@ TERMS AND CONDITIONS
 
   11. Patents.
 
-     A “contributor” is a copyright holder who authorizes use under this
+     A "contributor" is a copyright holder who authorizes use under this
      License of the Program or a work on which the Program is based.
-     The work thus licensed is called the contributor’s “contributor
-     version”.
+     The work thus licensed is called the contributor's "contributor
+     version".
 
-     A contributor’s “essential patent claims” are all patent claims
+     A contributor's "essential patent claims" are all patent claims
      owned or controlled by the contributor, whether already acquired or
      hereafter acquired, that would be infringed by some manner,
      permitted by this License, of making, using, or selling its
      contributor version, but do not include claims that would be
      infringed only as a consequence of further modification of the
-     contributor version.  For purposes of this definition, “control”
+     contributor version.  For purposes of this definition, "control"
      includes the right to grant patent sublicenses in a manner
      consistent with the requirements of this License.
 
      Each contributor grants you a non-exclusive, worldwide,
-     royalty-free patent license under the contributor’s essential
+     royalty-free patent license under the contributor's essential
      patent claims, to make, use, sell, offer for sale, import and
      otherwise run, modify and propagate the contents of its contributor
      version.
 
-     In the following three paragraphs, a “patent license” is any
+     In the following three paragraphs, a "patent license" is any
      express agreement or commitment, however denominated, not to
      enforce a patent (such as an express permission to practice a
-     patent or covenant not to sue for patent infringement).  To “grant”
+     patent or covenant not to sue for patent infringement).  To "grant"
      such a patent license to a party means to make such an agreement or
      commitment not to enforce a patent against the party.
 
@@ -5122,9 +5122,9 @@ TERMS AND CONDITIONS
      yourself of the benefit of the patent license for this particular
      work, or (3) arrange, in a manner consistent with the requirements
      of this License, to extend the patent license to downstream
-     recipients.  “Knowingly relying” means you have actual knowledge
+     recipients.  "Knowingly relying" means you have actual knowledge
      that, but for the patent license, your conveying the covered work
-     in a country, or your recipient’s use of the covered work in a
+     in a country, or your recipient's use of the covered work in a
      country, would infringe one or more identifiable patents in that
      country that you have reason to believe are valid.
 
@@ -5136,7 +5136,7 @@ TERMS AND CONDITIONS
      patent license you grant is automatically extended to all
      recipients of the covered work and works based on it.
 
-     A patent license is “discriminatory” if it does not include within
+     A patent license is "discriminatory" if it does not include within
      the scope of its coverage, prohibits the exercise of, or is
      conditioned on the non-exercise of one or more of the rights that
      are specifically granted under this License.  You may not convey a
@@ -5156,7 +5156,7 @@ TERMS AND CONDITIONS
      any implied license or other defenses to infringement that may
      otherwise be available to you under applicable patent law.
 
-  12. No Surrender of Others’ Freedom.
+  12. No Surrender of Others' Freedom.
 
      If conditions are imposed on you (whether by court order, agreement
      or otherwise) that contradict the conditions of this License, they
@@ -5189,7 +5189,7 @@ TERMS AND CONDITIONS
 
      Each version is given a distinguishing version number.  If the
      Program specifies that a certain numbered version of the GNU
-     General Public License “or any later version” applies to it, you
+     General Public License "or any later version" applies to it, you
      have the option of following the terms and conditions either of
      that numbered version or of any later version published by the Free
      Software Foundation.  If the Program does not specify a version
@@ -5198,7 +5198,7 @@ TERMS AND CONDITIONS
 
      If the Program specifies that a proxy can decide which future
      versions of the GNU General Public License can be used, that
-     proxy’s public statement of acceptance of a version permanently
+     proxy's public statement of acceptance of a version permanently
      authorizes you to choose that version for the Program.
 
      Later license versions may give you additional or different
@@ -5210,7 +5210,7 @@ TERMS AND CONDITIONS
 
      THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
      APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE
-     COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS”
+     COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS"
      WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
      INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
      MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE
@@ -5254,7 +5254,7 @@ terms.
    To do so, attach the following notices to the program.  It is safest
 to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least the
-“copyright” line and a pointer to where the full notice is found.
+"copyright" line and a pointer to where the full notice is found.
 
      ONE LINE TO GIVE THE PROGRAM'S NAME AND A BRIEF IDEA OF WHAT IT DOES.
      Copyright (C) YEAR NAME OF AUTHOR
@@ -5285,11 +5285,11 @@ notice like this when it starts in an interactive mode:
 
    The hypothetical commands ‘show w’ and ‘show c’ should show the
 appropriate parts of the General Public License.  Of course, your
-program’s commands might be different; for a GUI interface, you would
-use an “about box”.
+program's commands might be different; for a GUI interface, you would
+use an "about box".
 
    You should also get your employer (if you work as a programmer) or
-school, if any, to sign a “copyright disclaimer” for the program, if
+school, if any, to sign a "copyright disclaimer" for the program, if
 necessary.  For more information on this, and how to apply and follow
 the GNU GPL, see <https://www.gnu.org/licenses/>.
 
@@ -5324,7 +5324,7 @@ GNU Free Documentation License
      author and publisher a way to get credit for their work, while not
      being considered responsible for modifications made by others.
 
-     This License is a kind of “copyleft”, which means that derivative
+     This License is a kind of "copyleft", which means that derivative
      works of the document must themselves be free in the same sense.
      It complements the GNU General Public License, which is a copyleft
      license designed for free software.
@@ -5345,18 +5345,18 @@ GNU Free Documentation License
      be distributed under the terms of this License.  Such a notice
      grants a world-wide, royalty-free license, unlimited in duration,
      to use that work under the conditions stated herein.  The
-     “Document”, below, refers to any such manual or work.  Any member
-     of the public is a licensee, and is addressed as “you”.  You accept
+     "Document", below, refers to any such manual or work.  Any member
+     of the public is a licensee, and is addressed as "you".  You accept
      the license if you copy, modify or distribute the work in a way
      requiring permission under copyright law.
 
-     A “Modified Version” of the Document means any work containing the
+     A "Modified Version" of the Document means any work containing the
      Document or a portion of it, either copied verbatim, or with
      modifications and/or translated into another language.
 
-     A “Secondary Section” is a named appendix or a front-matter section
+     A "Secondary Section" is a named appendix or a front-matter section
      of the Document that deals exclusively with the relationship of the
-     publishers or authors of the Document to the Document’s overall
+     publishers or authors of the Document to the Document's overall
      subject (or to related matters) and contains nothing that could
      fall directly within that overall subject.  (Thus, if the Document
      is in part a textbook of mathematics, a Secondary Section may not
@@ -5365,7 +5365,7 @@ GNU Free Documentation License
      of legal, commercial, philosophical, ethical or political position
      regarding them.
 
-     The “Invariant Sections” are certain Secondary Sections whose
+     The "Invariant Sections" are certain Secondary Sections whose
      titles are designated, as being those of Invariant Sections, in the
      notice that says that the Document is released under this License.
      If a section does not fit the above definition of Secondary then it
@@ -5373,13 +5373,13 @@ GNU Free Documentation License
      contain zero Invariant Sections.  If the Document does not identify
      any Invariant Sections then there are none.
 
-     The “Cover Texts” are certain short passages of text that are
+     The "Cover Texts" are certain short passages of text that are
      listed, as Front-Cover Texts or Back-Cover Texts, in the notice
      that says that the Document is released under this License.  A
      Front-Cover Text may be at most 5 words, and a Back-Cover Text may
      be at most 25 words.
 
-     A “Transparent” copy of the Document means a machine-readable copy,
+     A "Transparent" copy of the Document means a machine-readable copy,
      represented in a format whose specification is available to the
      general public, that is suitable for revising the document
      straightforwardly with generic text editors or (for images composed
@@ -5391,7 +5391,7 @@ GNU Free Documentation License
      been arranged to thwart or discourage subsequent modification by
      readers is not Transparent.  An image format is not Transparent if
      used for any substantial amount of text.  A copy that is not
-     “Transparent” is called “Opaque”.
+     "Transparent" is called "Opaque".
 
      Examples of suitable formats for Transparent copies include plain
      ASCII without markup, Texinfo input format, LaTeX input format,
@@ -5404,23 +5404,23 @@ GNU Free Documentation License
      the machine-generated HTML, PostScript or PDF produced by some word
      processors for output purposes only.
 
-     The “Title Page” means, for a printed book, the title page itself,
+     The "Title Page" means, for a printed book, the title page itself,
      plus such following pages as are needed to hold, legibly, the
      material this License requires to appear in the title page.  For
-     works in formats which do not have any title page as such, “Title
-     Page” means the text near the most prominent appearance of the
-     work’s title, preceding the beginning of the body of the text.
+     works in formats which do not have any title page as such, "Title
+     Page" means the text near the most prominent appearance of the
+     work's title, preceding the beginning of the body of the text.
 
-     The “publisher” means any person or entity that distributes copies
+     The "publisher" means any person or entity that distributes copies
      of the Document to the public.
 
-     A section “Entitled XYZ” means a named subunit of the Document
+     A section "Entitled XYZ" means a named subunit of the Document
      whose title either is precisely XYZ or contains XYZ in parentheses
      following text that translates XYZ in another language.  (Here XYZ
      stands for a specific section name mentioned below, such as
-     “Acknowledgements”, “Dedications”, “Endorsements”, or “History”.)
-     To “Preserve the Title” of such a section when you modify the
-     Document means that it remains a section “Entitled XYZ” according
+     "Acknowledgements", "Dedications", "Endorsements", or "History".)
+     To "Preserve the Title" of such a section when you modify the
+     Document means that it remains a section "Entitled XYZ" according
      to this definition.
 
      The Document may include Warranty Disclaimers next to the notice
@@ -5450,7 +5450,7 @@ GNU Free Documentation License
 
      If you publish printed copies (or copies in media that commonly
      have printed covers) of the Document, numbering more than 100, and
-     the Document’s license notice requires Cover Texts, you must
+     the Document's license notice requires Cover Texts, you must
      enclose the copies in covers that carry, clearly and legibly, all
      these Cover Texts: Front-Cover Texts on the front cover, and
      Back-Cover Texts on the back cover.  Both covers must also clearly
@@ -5522,15 +5522,15 @@ GNU Free Documentation License
           the Addendum below.
 
        G. Preserve in that license notice the full lists of Invariant
-          Sections and required Cover Texts given in the Document’s
+          Sections and required Cover Texts given in the Document's
           license notice.
 
        H. Include an unaltered copy of this License.
 
-       I. Preserve the section Entitled “History”, Preserve its Title,
+       I. Preserve the section Entitled "History", Preserve its Title,
           and add to it an item stating at least the title, year, new
           authors, and publisher of the Modified Version as given on the
-          Title Page.  If there is no section Entitled “History” in the
+          Title Page.  If there is no section Entitled "History" in the
           Document, create one stating the title, year, authors, and
           publisher of the Document as given on its Title Page, then add
           an item describing the Modified Version as stated in the
@@ -5540,12 +5540,12 @@ GNU Free Documentation License
           for public access to a Transparent copy of the Document, and
           likewise the network locations given in the Document for
           previous versions it was based on.  These may be placed in the
-          “History” section.  You may omit a network location for a work
+          "History" section.  You may omit a network location for a work
           that was published at least four years before the Document
           itself, or if the original publisher of the version it refers
           to gives permission.
 
-       K. For any section Entitled “Acknowledgements” or “Dedications”,
+       K. For any section Entitled "Acknowledgements" or "Dedications",
           Preserve the Title of the section, and preserve in the section
           all the substance and tone of each of the contributor
           acknowledgements and/or dedications given therein.
@@ -5554,11 +5554,11 @@ GNU Free Documentation License
           in their text and in their titles.  Section numbers or the
           equivalent are not considered part of the section titles.
 
-       M. Delete any section Entitled “Endorsements”.  Such a section
+       M. Delete any section Entitled "Endorsements".  Such a section
           may not be included in the Modified Version.
 
        N. Do not retitle any existing section to be Entitled
-          “Endorsements” or to conflict in title with any Invariant
+          "Endorsements" or to conflict in title with any Invariant
           Section.
 
        O. Preserve any Warranty Disclaimers.
@@ -5567,15 +5567,15 @@ GNU Free Documentation License
      appendices that qualify as Secondary Sections and contain no
      material copied from the Document, you may at your option designate
      some or all of these sections as invariant.  To do this, add their
-     titles to the list of Invariant Sections in the Modified Version’s
+     titles to the list of Invariant Sections in the Modified Version's
      license notice.  These titles must be distinct from any other
      section titles.
 
-     You may add a section Entitled “Endorsements”, provided it contains
+     You may add a section Entitled "Endorsements", provided it contains
      nothing but endorsements of your Modified Version by various
-     parties—for example, statements of peer review or that the text has
-     been approved by an organization as the authoritative definition of
-     a standard.
+     parties--for example, statements of peer review or that the text
+     has been approved by an organization as the authoritative
+     definition of a standard.
 
      You may add a passage of up to five words as a Front-Cover Text,
      and a passage of up to 25 words as a Back-Cover Text, to the end of
@@ -5613,10 +5613,10 @@ GNU Free Documentation License
      combined work.
 
      In the combination, you must combine any sections Entitled
-     “History” in the various original documents, forming one section
-     Entitled “History”; likewise combine any sections Entitled
-     “Acknowledgements”, and any sections Entitled “Dedications”.  You
-     must delete all sections Entitled “Endorsements.”
+     "History" in the various original documents, forming one section
+     Entitled "History"; likewise combine any sections Entitled
+     "Acknowledgements", and any sections Entitled "Dedications".  You
+     must delete all sections Entitled "Endorsements."
 
   6. COLLECTIONS OF DOCUMENTS
 
@@ -5637,16 +5637,16 @@ GNU Free Documentation License
 
      A compilation of the Document or its derivatives with other
      separate and independent documents or works, in or on a volume of a
-     storage or distribution medium, is called an “aggregate” if the
+     storage or distribution medium, is called an "aggregate" if the
      copyright resulting from the compilation is not used to limit the
-     legal rights of the compilation’s users beyond what the individual
+     legal rights of the compilation's users beyond what the individual
      works permit.  When the Document is included in an aggregate, this
      License does not apply to the other works in the aggregate which
      are not themselves derivative works of the Document.
 
      If the Cover Text requirement of section 3 is applicable to these
      copies of the Document, then if the Document is less than one half
-     of the entire aggregate, the Document’s Cover Texts may be placed
+     of the entire aggregate, the Document's Cover Texts may be placed
      on covers that bracket the Document within the aggregate, or the
      electronic equivalent of covers if the Document is in electronic
      form.  Otherwise they must appear on printed covers that bracket
@@ -5668,8 +5668,8 @@ GNU Free Documentation License
      this License or a notice or disclaimer, the original version will
      prevail.
 
-     If a section in the Document is Entitled “Acknowledgements”,
-     “Dedications”, or “History”, the requirement (section 4) to
+     If a section in the Document is Entitled "Acknowledgements",
+     "Dedications", or "History", the requirement (section 4) to
      Preserve its Title (section 1) will typically require changing the
      actual title.
 
@@ -5710,7 +5710,7 @@ GNU Free Documentation License
 
      Each version of the License is given a distinguishing version
      number.  If the Document specifies that a particular numbered
-     version of this License “or any later version” applies to it, you
+     version of this License "or any later version" applies to it, you
      have the option of following the terms and conditions either of
      that specified version or of any later version that has been
      published (not as a draft) by the Free Software Foundation.  If the
@@ -5718,29 +5718,29 @@ GNU Free Documentation License
      choose any version ever published (not as a draft) by the Free
      Software Foundation.  If the Document specifies that a proxy can
      decide which future versions of this License can be used, that
-     proxy’s public statement of acceptance of a version permanently
+     proxy's public statement of acceptance of a version permanently
      authorizes you to choose that version for the Document.
 
   11. RELICENSING
 
-     “Massive Multiauthor Collaboration Site” (or “MMC Site”) means any
+     "Massive Multiauthor Collaboration Site" (or "MMC Site") means any
      World Wide Web server that publishes copyrightable works and also
      provides prominent facilities for anybody to edit those works.  A
      public wiki that anybody can edit is an example of such a server.
-     A “Massive Multiauthor Collaboration” (or “MMC”) contained in the
+     A "Massive Multiauthor Collaboration" (or "MMC") contained in the
      site means any set of copyrightable works thus published on the MMC
      site.
 
-     “CC-BY-SA” means the Creative Commons Attribution-Share Alike 3.0
+     "CC-BY-SA" means the Creative Commons Attribution-Share Alike 3.0
      license published by Creative Commons Corporation, a not-for-profit
      corporation with a principal place of business in San Francisco,
      California, as well as future copyleft versions of that license
      published by that same organization.
 
-     “Incorporate” means to publish or republish a Document, in whole or
+     "Incorporate" means to publish or republish a Document, in whole or
      in part, as part of another Document.
 
-     An MMC is “eligible for relicensing” if it is licensed under this
+     An MMC is "eligible for relicensing" if it is licensed under this
      License, and if all works that were first published under this
      License somewhere other than this MMC, and subsequently
      incorporated in whole or in part into the MMC, (1) had no cover
@@ -5767,7 +5767,7 @@ notices just after the title page:
        Free Documentation License''.
 
    If you have Invariant Sections, Front-Cover Texts and Back-Cover
-Texts, replace the “with...Texts.” line with this:
+Texts, replace the "with...Texts."  line with this:
 
          with the Invariant Sections being LIST THEIR TITLES, with
          the Front-Cover Texts being LIST, and with the Back-Cover Texts
@@ -5795,7 +5795,7 @@ commercial redistributors to donate.
 
    Users of free software systems can boost the pace of development by
 encouraging for-a-fee distributors to donate part of their selling price
-to free software developers—the Free Software Foundation, and others.
+to free software developers--the Free Software Foundation, and others.
 
    The way to convince distributors to do this is to demand it and
 expect it from them.  So when you compare distributors, judge them
@@ -5803,12 +5803,12 @@ partly by how much they give to free software development.  Show
 distributors they must compete to be the one who gives the most.
 
    To make this approach work, you must insist on numbers that you can
-compare, such as, “We will donate ten dollars to the Frobnitz project
-for each disk sold.” Don’t be satisfied with a vague promise, such as “A
-portion of the profits are donated,” since it doesn’t give a basis for
-comparison.
+compare, such as, "We will donate ten dollars to the Frobnitz project
+for each disk sold."  Don't be satisfied with a vague promise, such as
+"A portion of the profits are donated," since it doesn't give a basis
+for comparison.
 
-   Even a precise fraction “of the profits from this disk” is not very
+   Even a precise fraction "of the profits from this disk" is not very
 meaningful, since creative accounting and unrelated business decisions
 can greatly alter what fraction of the sales price counts as profit.  If
 the price you pay is $50, ten percent of the profit is probably less
@@ -5824,8 +5824,8 @@ contribute little, since someone else would surely do them; difficult
 ports such as adding a new CPU to the GNU Compiler Collection contribute
 more; major new features or packages contribute the most.
 
-   By establishing the idea that supporting further development is “the
-proper thing to do” when distributing free software for a fee, we can
+   By establishing the idea that supporting further development is "the
+proper thing to do" when distributing free software for a fee, we can
 assure a steady flow of resources into making more free software.
 
      Copyright © 1994 Free Software Foundation, Inc.
@@ -5882,171 +5882,171 @@ Library Index
 
 
 Tag Table:
-Node: Top2107
-Node: Enabling OpenMP4940
-Node: OpenMP Implementation Status5786
-Node: OpenMP 4.56503
-Node: OpenMP 5.06679
-Node: OpenMP 5.111946
-Node: OpenMP 5.216323
-Ref: OpenMP 5.2-Footnote-119446
-Node: OpenMP Technical Report 1119880
-Node: Runtime Library Routines22585
-Node: omp_get_active_level26290
-Node: omp_get_ancestor_thread_num27004
-Node: omp_get_cancellation27964
-Node: omp_get_default_device28812
-Node: omp_get_device_num29505
-Node: omp_get_dynamic30328
-Node: omp_get_initial_device31246
-Node: omp_get_level32008
-Node: omp_get_max_active_levels32649
-Node: omp_get_max_task_priority33384
-Node: omp_get_max_teams34018
-Node: omp_get_max_threads34730
-Node: omp_get_nested35499
-Node: omp_get_num_devices37161
-Node: omp_get_num_procs37696
-Node: omp_get_num_teams38249
-Node: omp_get_num_threads38779
-Node: omp_get_proc_bind39902
-Node: omp_get_schedule40975
-Node: omp_get_supported_active_levels41982
-Node: omp_get_team_num42782
-Node: omp_get_team_size43310
-Node: omp_get_teams_thread_limit44306
-Node: omp_get_thread_limit45082
-Node: omp_get_thread_num45724
-Node: omp_in_parallel46618
-Node: omp_in_final47297
-Node: omp_is_initial_device48001
-Node: omp_set_default_device48724
-Node: omp_set_dynamic49533
-Node: omp_set_max_active_levels50453
-Node: omp_set_nested51397
-Node: omp_set_num_teams52626
-Node: omp_set_num_threads53525
-Node: omp_set_schedule54422
-Node: omp_set_teams_thread_limit55562
-Node: omp_init_lock56590
-Node: omp_set_lock57271
-Node: omp_test_lock58148
-Node: omp_unset_lock59170
-Node: omp_destroy_lock60131
-Node: omp_init_nest_lock60826
-Node: omp_set_nest_lock61579
-Node: omp_test_nest_lock62516
-Node: omp_unset_nest_lock63573
-Node: omp_destroy_nest_lock64618
-Node: omp_get_wtick65387
-Node: omp_get_wtime65993
-Node: omp_fulfill_event66809
-Node: Environment Variables67852
-Node: OMP_CANCELLATION69649
-Node: OMP_DISPLAY_ENV70200
-Node: OMP_DEFAULT_DEVICE70925
-Node: OMP_DYNAMIC71723
-Node: OMP_MAX_ACTIVE_LEVELS72333
-Node: OMP_MAX_TASK_PRIORITY73278
-Node: OMP_NESTED73942
-Node: OMP_NUM_TEAMS74999
-Node: OMP_NUM_THREADS75682
-Node: OMP_PROC_BIND76493
-Node: OMP_PLACES77901
-Node: OMP_STACKSIZE80674
-Node: OMP_SCHEDULE81524
-Node: OMP_TARGET_OFFLOAD82266
-Node: OMP_TEAMS_THREAD_LIMIT83262
-Node: OMP_THREAD_LIMIT84079
-Node: OMP_WAIT_POLICY84695
-Node: GOMP_CPU_AFFINITY85401
-Node: GOMP_DEBUG87181
-Node: GOMP_STACKSIZE87702
-Node: GOMP_SPINCOUNT88543
-Node: GOMP_RTEMS_THREAD_POOLS89817
-Node: Enabling OpenACC92076
-Node: OpenACC Runtime Library Routines93017
-Node: acc_get_num_devices97302
-Node: acc_set_device_type98046
-Node: acc_get_device_type98828
-Node: acc_set_device_num99875
-Node: acc_get_device_num100714
-Node: acc_get_property101535
-Node: acc_async_test103840
-Node: acc_async_test_all104858
-Node: acc_wait105784
-Node: acc_wait_all106677
-Node: acc_wait_all_async107460
-Node: acc_wait_async108230
-Node: acc_init108956
-Node: acc_shutdown109619
-Node: acc_on_device110304
-Node: acc_malloc111338
-Node: acc_free111847
-Node: acc_copyin112288
-Node: acc_present_or_copyin113937
-Node: acc_create115777
-Node: acc_present_or_create117471
-Node: acc_copyout119319
-Node: acc_delete121741
-Node: acc_update_device124106
-Node: acc_update_self125742
-Node: acc_map_data127394
-Node: acc_unmap_data128089
-Node: acc_deviceptr128620
-Node: acc_hostptr129200
-Node: acc_is_present129774
-Node: acc_memcpy_to_device131347
-Node: acc_memcpy_from_device132020
-Node: acc_attach132697
-Node: acc_detach133358
-Node: acc_get_current_cuda_device134159
-Node: acc_get_current_cuda_context134756
-Node: acc_get_cuda_stream135368
-Node: acc_set_cuda_stream135971
-Node: acc_prof_register136656
-Node: acc_prof_unregister137225
-Node: acc_prof_lookup137802
-Node: acc_register_library138333
-Node: OpenACC Environment Variables138909
-Node: ACC_DEVICE_TYPE139497
-Node: ACC_DEVICE_NUM139737
-Node: ACC_PROFLIB139995
-Node: GCC_ACC_NOTIFY140330
-Node: CUDA Streams Usage140554
-Ref: CUDA Streams Usage-Footnote-1142527
-Node: OpenACC Library Interoperability142636
-Ref: OpenACC Library Interoperability-Footnote-1149095
-Ref: OpenACC Library Interoperability-Footnote-2149347
-Node: OpenACC Profiling Interface149563
-Node: OpenMP-Implementation Specifics160413
-Node: OpenMP Context Selectors160702
-Ref: OpenMP Context Selectors-Footnote-1161873
-Node: Memory allocation with libmemkind161949
-Node: Offload-Target Specifics162508
-Node: AMD Radeon162799
-Node: nvptx165091
-Node: The libgomp ABI167511
-Node: Implementing MASTER construct168361
-Node: Implementing CRITICAL construct168778
-Node: Implementing ATOMIC construct169523
-Node: Implementing FLUSH construct170010
-Node: Implementing BARRIER construct170287
-Node: Implementing THREADPRIVATE construct170558
-Node: Implementing PRIVATE clause171217
-Node: Implementing FIRSTPRIVATE LASTPRIVATE COPYIN and COPYPRIVATE clauses171800
-Node: Implementing REDUCTION clause173126
-Node: Implementing PARALLEL construct173688
-Node: Implementing FOR construct174951
-Node: Implementing ORDERED construct176957
-Node: Implementing SECTIONS construct177265
-Node: Implementing SINGLE construct178033
-Node: Implementing OpenACC's PARALLEL construct178747
-Node: Reporting Bugs179009
-Node: Copying179372
-Node: GNU Free Documentation License217143
-Node: Funding242474
-Node: Library Index245019
+Node: Top2081
+Node: Enabling OpenMP4910
+Node: OpenMP Implementation Status5756
+Node: OpenMP 4.56471
+Node: OpenMP 5.06647
+Node: OpenMP 5.111908
+Node: OpenMP 5.216283
+Ref: OpenMP 5.2-Footnote-119406
+Node: OpenMP Technical Report 1119840
+Node: Runtime Library Routines22545
+Node: omp_get_active_level26250
+Node: omp_get_ancestor_thread_num26962
+Node: omp_get_cancellation27920
+Node: omp_get_default_device28766
+Node: omp_get_device_num29457
+Node: omp_get_dynamic30278
+Node: omp_get_initial_device31194
+Node: omp_get_level31954
+Node: omp_get_max_active_levels32593
+Node: omp_get_max_task_priority33326
+Node: omp_get_max_teams33958
+Node: omp_get_max_threads34668
+Node: omp_get_nested35435
+Node: omp_get_num_devices37095
+Node: omp_get_num_procs37628
+Node: omp_get_num_teams38179
+Node: omp_get_num_threads38707
+Node: omp_get_proc_bind39828
+Node: omp_get_schedule40899
+Node: omp_get_supported_active_levels41904
+Node: omp_get_team_num42702
+Node: omp_get_team_size43228
+Node: omp_get_teams_thread_limit44222
+Node: omp_get_thread_limit44996
+Node: omp_get_thread_num45636
+Node: omp_in_parallel46528
+Node: omp_in_final47205
+Node: omp_is_initial_device47907
+Node: omp_set_default_device48628
+Node: omp_set_dynamic49435
+Node: omp_set_max_active_levels50353
+Node: omp_set_nested51295
+Node: omp_set_num_teams52522
+Node: omp_set_num_threads53419
+Node: omp_set_schedule54314
+Node: omp_set_teams_thread_limit55452
+Node: omp_init_lock56478
+Node: omp_set_lock57157
+Node: omp_test_lock58032
+Node: omp_unset_lock59052
+Node: omp_destroy_lock60011
+Node: omp_init_nest_lock60704
+Node: omp_set_nest_lock61455
+Node: omp_test_nest_lock62390
+Node: omp_unset_nest_lock63445
+Node: omp_destroy_nest_lock64488
+Node: omp_get_wtick65255
+Node: omp_get_wtime65859
+Node: omp_fulfill_event66673
+Node: Environment Variables67714
+Node: OMP_CANCELLATION69511
+Node: OMP_DISPLAY_ENV70060
+Node: OMP_DEFAULT_DEVICE70783
+Node: OMP_DYNAMIC71579
+Node: OMP_MAX_ACTIVE_LEVELS72187
+Node: OMP_MAX_TASK_PRIORITY73130
+Node: OMP_NESTED73792
+Node: OMP_NUM_TEAMS74847
+Node: OMP_NUM_THREADS75528
+Node: OMP_PROC_BIND76337
+Node: OMP_PLACES77743
+Node: OMP_STACKSIZE80512
+Node: OMP_SCHEDULE81360
+Node: OMP_TARGET_OFFLOAD82100
+Node: OMP_TEAMS_THREAD_LIMIT83094
+Node: OMP_THREAD_LIMIT83909
+Node: OMP_WAIT_POLICY84523
+Node: GOMP_CPU_AFFINITY85227
+Node: GOMP_DEBUG87006
+Node: GOMP_STACKSIZE87525
+Node: GOMP_SPINCOUNT88364
+Node: GOMP_RTEMS_THREAD_POOLS89636
+Node: Enabling OpenACC91893
+Node: OpenACC Runtime Library Routines92834
+Node: acc_get_num_devices97119
+Node: acc_set_device_type97861
+Node: acc_get_device_type98641
+Node: acc_set_device_num99686
+Node: acc_get_device_num100523
+Node: acc_get_property101342
+Node: acc_async_test103645
+Node: acc_async_test_all104661
+Node: acc_wait105585
+Node: acc_wait_all106476
+Node: acc_wait_all_async107257
+Node: acc_wait_async108025
+Node: acc_init108749
+Node: acc_shutdown109410
+Node: acc_on_device110093
+Node: acc_malloc111125
+Node: acc_free111632
+Node: acc_copyin112071
+Node: acc_present_or_copyin113718
+Node: acc_create115556
+Node: acc_present_or_create117248
+Node: acc_copyout119094
+Node: acc_delete121514
+Node: acc_update_device123877
+Node: acc_update_self125511
+Node: acc_map_data127161
+Node: acc_unmap_data127854
+Node: acc_deviceptr128383
+Node: acc_hostptr128961
+Node: acc_is_present129533
+Node: acc_memcpy_to_device131104
+Node: acc_memcpy_from_device131775
+Node: acc_attach132450
+Node: acc_detach133109
+Node: acc_get_current_cuda_device133908
+Node: acc_get_current_cuda_context134501
+Node: acc_get_cuda_stream135109
+Node: acc_set_cuda_stream135708
+Node: acc_prof_register136391
+Node: acc_prof_unregister136958
+Node: acc_prof_lookup137533
+Node: acc_register_library138062
+Node: OpenACC Environment Variables138636
+Node: ACC_DEVICE_TYPE139224
+Node: ACC_DEVICE_NUM139464
+Node: ACC_PROFLIB139722
+Node: GCC_ACC_NOTIFY140057
+Node: CUDA Streams Usage140281
+Ref: CUDA Streams Usage-Footnote-1142254
+Node: OpenACC Library Interoperability142363
+Ref: OpenACC Library Interoperability-Footnote-1148822
+Ref: OpenACC Library Interoperability-Footnote-2149074
+Node: OpenACC Profiling Interface149290
+Node: OpenMP-Implementation Specifics160092
+Node: OpenMP Context Selectors160381
+Ref: OpenMP Context Selectors-Footnote-1161540
+Node: Memory allocation with libmemkind161616
+Node: Offload-Target Specifics162175
+Node: AMD Radeon162466
+Node: nvptx164738
+Node: The libgomp ABI167136
+Node: Implementing MASTER construct167986
+Node: Implementing CRITICAL construct168403
+Node: Implementing ATOMIC construct169144
+Node: Implementing FLUSH construct169631
+Node: Implementing BARRIER construct169908
+Node: Implementing THREADPRIVATE construct170179
+Node: Implementing PRIVATE clause170838
+Node: Implementing FIRSTPRIVATE LASTPRIVATE COPYIN and COPYPRIVATE clauses171421
+Node: Implementing REDUCTION clause172748
+Node: Implementing PARALLEL construct173308
+Node: Implementing FOR construct174571
+Node: Implementing ORDERED construct176571
+Node: Implementing SECTIONS construct176879
+Node: Implementing SINGLE construct177647
+Node: Implementing OpenACC's PARALLEL construct178361
+Node: Reporting Bugs178621
+Node: Copying178984
+Node: GNU Free Documentation License216551
+Node: Funding241682
+Node: Library Index244207
 
 End Tag Table
 

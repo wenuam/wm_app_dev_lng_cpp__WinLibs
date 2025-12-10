@@ -19,7 +19,7 @@ import gdb
 import os
 import os.path
 
-pythondir = os.path.realpath(os.path.dirname(os.path.realpath(__file__)) + '/..') + '/share/gcc-13.1.0/python'
+pythondir = os.path.realpath(os.path.dirname(os.path.realpath(__file__)) + '/..') + '/share/gcc-13.2.0/python'
 libdir = os.path.realpath(os.path.dirname(os.path.realpath(__file__)) + '/..') + '/lib/../lib'
 
 # This file might be loaded when there is no current objfile.  This

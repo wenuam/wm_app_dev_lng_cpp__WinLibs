@@ -30,16 +30,16 @@ MODLIBS=           $(LOCALMODLIBS) $(BASEMODLIBS)
 VERSION=	3.9
 srcdir=		..
 VPATH=		..
-abs_srcdir=	/R/winlibs64ucrt_stage/cpython-mingw-3.9.7/cpython-mingw/build_win/..
-abs_builddir=	/R/winlibs64ucrt_stage/cpython-mingw-3.9.7/cpython-mingw/build_win
+abs_srcdir=	/r/winlibs64ucrt_stage/cpython-mingw-3.9.7/cpython-mingw/build_win/..
+abs_builddir=	/r/winlibs64ucrt_stage/cpython-mingw-3.9.7/cpython-mingw/build_win
 
 
-CC=		x86_64-w64-mingw32-gcc
-CXX=		x86_64-w64-mingw32-c++
+CC=		D:/Prog/winlibs64ucrt_stage/mingw64/bin/x86_64-w64-mingw32-gcc.exe
+CXX=		D:/Prog/winlibs64ucrt_stage/mingw64/bin/x86_64-w64-mingw32-g++.exe
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
-AR=		ar
-WINDRES=	windres
+AR=		D:/Prog/winlibs64ucrt_stage/mingw64/bin/x86_64-w64-mingw32-gcc-ar.exe
+WINDRES=	D:/Prog/winlibs64ucrt_stage/mingw64/bin/windres.exe
 READELF=	readelf
 SOABI=		cpython-39
 LDVERSION=	$(VERSION)$(ABIFLAGS)
@@ -226,7 +226,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=R:/winlibs64ucrt_stage/inst_cpython-mingw-3.9.7/share/python' '--build=x86_64-w64-mingw32' '--host=x86_64-w64-mingw32' '--enable-shared' '--enable-optimizations' '--disable-ipv6' '--with-system-expat' '--with-system-ffi' '--with-system-libmpdec' '--without-ensurepip' '--without-c-locale-coercion' '--enable-loadable-sqlite-extensions' '--with-ssl-default-suites=openssl' 'CFLAGS=-D_POSIX -Wno-implicit-function-declaration' 'build_alias=x86_64-w64-mingw32' 'host_alias=x86_64-w64-mingw32' 'PKG_CONFIG_PATH=/d/Prog/winlibs64ucrt_stage/custombuilt/lib/pkgconfig:/d/Prog/winlibs64ucrt_stage/custombuilt/share/pkgconfig'
+CONFIG_ARGS=	 '--prefix=R:/winlibs64ucrt_stage/inst_cpython-mingw-3.9.7/share/python' '--build=x86_64-w64-mingw32' '--host=x86_64-w64-mingw32' '--enable-shared' '--enable-optimizations' '--disable-ipv6' '--with-system-expat' '--with-system-ffi' '--with-system-libmpdec' '--without-ensurepip' '--without-c-locale-coercion' '--enable-loadable-sqlite-extensions' '--with-ssl-default-suites=openssl' 'CFLAGS=-D_POSIX -Wno-implicit-function-declaration' 'build_alias=x86_64-w64-mingw32' 'host_alias=x86_64-w64-mingw32' 'CC=D:/Prog/winlibs64ucrt_stage/mingw64/bin/x86_64-w64-mingw32-gcc.exe' 'PKG_CONFIG_PATH=D:\Prog\winlibs64ucrt_stage\custombuilt\lib\pkgconfig;D:\Prog\winlibs64ucrt_stage\custombuilt\share\pkgconfig'
 
 
 # Subdirectories with code
