@@ -791,8 +791,8 @@ build_time_vars = {'ABIFLAGS': '',
  'abs_srcdir_b2h': 'R:/winlibs_staging_ucrt64/cpython-mingw-3.9.7/cpython-mingw',
  'datarootdir': '' + os.path.abspath(os.path.dirname(os.path.abspath(__file__))) + '/share/python/share',
  'exec_prefix': '' + os.path.abspath(os.path.dirname(os.path.abspath(__file__))) + '/share/python',
- 'prefix': '' + os.path.abspath(os.path.dirname(os.path.abspath(__file__))) + '/share/python',
- 'prefix_b2h': '' + os.path.abspath(os.path.dirname(os.path.abspath(__file__))) + '/share/python',
+ 'prefix': '',
+ 'prefix_b2h': '',
  'srcdir': 'R:/winlibs_staging_ucrt64/cpython-mingw-3.9.7/cpython-mingw',
  'srcdir_b2h': 'R:/winlibs_staging_ucrt64/cpython-mingw-3.9.7/cpython-mingw'}
 

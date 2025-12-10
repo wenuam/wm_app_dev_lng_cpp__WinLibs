@@ -145,7 +145,7 @@ srcdir_b2h=		R:/winlibs_staging_ucrt64/cpython-mingw-3.9.7/cpython-mingw
 VPATH_b2h=		R:/winlibs_staging_ucrt64/cpython-mingw-3.9.7/cpython-mingw
 abs_srcdir_b2h=		R:/winlibs_staging_ucrt64/cpython-mingw-3.9.7/cpython-mingw
 abs_builddir_b2h=	R:/winlibs_staging_ucrt64/cpython-mingw-3.9.7/cpython-mingw/build_win
-prefix_b2h=		R:/winlibs_staging_ucrt64/inst_cpython-mingw-3.9.7/share/python
+prefix_b2h=		
 
 # Expanded directories
 BINDIR=		${exec_prefix}/bin

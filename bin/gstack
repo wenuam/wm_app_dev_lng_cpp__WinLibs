@@ -22,7 +22,7 @@
 GDB=${GDB:-$(command -v gdb)}
 GDBARGS=${GDBARGS:-}
 AWK=${AWK:-}
-PKGVERSION="(GDB for MinGW-W64 x86_64, built by Brecht Sanders, r1) "
+PKGVERSION="(GDB for MinGW-W64 x86_64, built by Brecht Sanders, r4) "
 VERSION="16.3"
 
 # Find an appropriate awk interpreter if one was not specified

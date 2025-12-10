@@ -4,7 +4,7 @@
    are permitted in any medium without royalty provided the copyright
    notice and this notice are preserved.  */
 OUTPUT_FORMAT(pe-i386)
-SEARCH_DIR("/R/winlibs_staging_ucrt64/inst_binutils-2.45/share/binutils/x86_64-w64-mingw32/lib");
+SEARCH_DIR("/R/winlibs_staging_ucrt64/inst_binutils-2.45.1/share/binutils/x86_64-w64-mingw32/lib");
 SECTIONS
 {
   .text  :
