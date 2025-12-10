@@ -82,7 +82,7 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 OPT=		-DNDEBUG -g -fwrapv -O3 -Wall
 BASECFLAGS=	 -Wno-unused-result -Wsign-compare
 BASECPPFLAGS=	-IObjects -IInclude -IPython
-CONFIGURE_CFLAGS=	-D_POSIX -Wno-implicit-function-declaration
+CONFIGURE_CFLAGS=	-D_POSIX -Wno-implicit-function-declaration -Wno-incompatible-pointer-types
 # CFLAGS_NODIST is used for building the interpreter and stdlib C extensions.
 # Use it when a compiler flag should _not_ be part of the distutils CFLAGS
 # once Python is installed (Issue #21121).
@@ -226,7 +226,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=R:/winlibs64ucrt_stage/inst_cpython-mingw-3.9.7/share/python' '--build=x86_64-w64-mingw32' '--host=x86_64-w64-mingw32' '--enable-shared' '--enable-optimizations' '--disable-ipv6' '--with-system-expat' '--with-system-ffi' '--with-system-libmpdec' '--without-ensurepip' '--without-c-locale-coercion' '--enable-loadable-sqlite-extensions' '--with-ssl-default-suites=openssl' 'CFLAGS=-D_POSIX -Wno-implicit-function-declaration' 'build_alias=x86_64-w64-mingw32' 'host_alias=x86_64-w64-mingw32' 'CC=D:/Prog/winlibs64ucrt_stage/mingw64/bin/x86_64-w64-mingw32-gcc.exe' 'PKG_CONFIG_PATH=D:\Prog\winlibs64ucrt_stage\custombuilt\lib\pkgconfig;D:\Prog\winlibs64ucrt_stage\custombuilt\share\pkgconfig'
+CONFIG_ARGS=	 '--prefix=R:/winlibs64ucrt_stage/inst_cpython-mingw-3.9.7/share/python' '--build=x86_64-w64-mingw32' '--host=x86_64-w64-mingw32' '--enable-shared' '--enable-optimizations' '--disable-ipv6' '--with-system-expat' '--with-system-ffi' '--with-system-libmpdec' '--without-ensurepip' '--without-c-locale-coercion' '--enable-loadable-sqlite-extensions' '--with-ssl-default-suites=openssl' 'CFLAGS=-D_POSIX -Wno-implicit-function-declaration -Wno-incompatible-pointer-types' 'build_alias=x86_64-w64-mingw32' 'host_alias=x86_64-w64-mingw32' 'CC=D:/Prog/winlibs64ucrt_stage/mingw64/bin/x86_64-w64-mingw32-gcc.exe' 'PKG_CONFIG_PATH=D:\Prog\winlibs64ucrt_stage\custombuilt\lib\pkgconfig;D:\Prog\winlibs64ucrt_stage\custombuilt\share\pkgconfig'
 
 
 # Subdirectories with code

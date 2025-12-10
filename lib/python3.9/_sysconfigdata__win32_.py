@@ -26,12 +26,14 @@ build_time_vars = {'ABIFLAGS': '',
  'CC': 'D:/Prog/winlibs64ucrt_stage/mingw64/bin/x86_64-w64-mingw32-gcc.exe',
  'CCSHARED': '',
  'CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall '
-           '-D_POSIX -Wno-implicit-function-declaration',
+           '-D_POSIX -Wno-implicit-function-declaration '
+           '-Wno-incompatible-pointer-types',
  'CFLAGSFORSHARED': '',
  'CFLAGS_ALIASING': '',
  'CONFIGFILES': 'configure configure.ac acconfig.h pyconfig.h.in '
                 'Makefile.pre.in',
- 'CONFIGURE_CFLAGS': '-D_POSIX -Wno-implicit-function-declaration',
+ 'CONFIGURE_CFLAGS': '-D_POSIX -Wno-implicit-function-declaration '
+                     '-Wno-incompatible-pointer-types',
  'CONFIGURE_CFLAGS_NODIST': '-std=c99 -Wextra -Wno-unused-result '
                             '-Wno-unused-parameter '
                             '-Wno-missing-field-initializers '
@@ -50,7 +52,8 @@ build_time_vars = {'ABIFLAGS': '',
                 "'--without-c-locale-coercion' "
                 "'--enable-loadable-sqlite-extensions' "
                 "'--with-ssl-default-suites=openssl' 'CFLAGS=-D_POSIX "
-                "-Wno-implicit-function-declaration' "
+                '-Wno-implicit-function-declaration '
+                "-Wno-incompatible-pointer-types' "
                 "'build_alias=x86_64-w64-mingw32' "
                 "'host_alias=x86_64-w64-mingw32' "
                 "'CC=D:/Prog/winlibs64ucrt_stage/mingw64/bin/x86_64-w64-mingw32-gcc.exe' "
@@ -660,8 +663,9 @@ build_time_vars = {'ABIFLAGS': '',
  'PY_BUILTIN_HASHLIB_HASHES': '"md5,sha1,sha256,sha512,sha3,blake2"',
  'PY_BUILTIN_MODULE_CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g '
                              '-fwrapv -O3 -Wall -D_POSIX '
-                             '-Wno-implicit-function-declaration -std=c99 '
-                             '-Wextra -Wno-unused-result -Wno-unused-parameter '
+                             '-Wno-implicit-function-declaration '
+                             '-Wno-incompatible-pointer-types -std=c99 -Wextra '
+                             '-Wno-unused-result -Wno-unused-parameter '
                              '-Wno-missing-field-initializers '
                              '-Wstrict-prototypes '
                              '-Werror=implicit-function-declaration '
@@ -670,7 +674,8 @@ build_time_vars = {'ABIFLAGS': '',
                              '-IObjects -IInclude -IPython -I. -I../Include '
                              '-I../PC  -I. -DPy_BUILD_CORE_BUILTIN',
  'PY_CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall '
-              '-D_POSIX -Wno-implicit-function-declaration',
+              '-D_POSIX -Wno-implicit-function-declaration '
+              '-Wno-incompatible-pointer-types',
  'PY_CFLAGS_NODIST': '-std=c99 -Wextra -Wno-unused-result '
                      '-Wno-unused-parameter -Wno-missing-field-initializers '
                      '-Wstrict-prototypes '
@@ -679,8 +684,9 @@ build_time_vars = {'ABIFLAGS': '',
                      '-DMS_DLL_ID=\'"3.9"\'  -I../Include/internal',
  'PY_COERCE_C_LOCALE': 0,
  'PY_CORE_CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 '
-                   '-Wall -D_POSIX -Wno-implicit-function-declaration -std=c99 '
-                   '-Wextra -Wno-unused-result -Wno-unused-parameter '
+                   '-Wall -D_POSIX -Wno-implicit-function-declaration '
+                   '-Wno-incompatible-pointer-types -std=c99 -Wextra '
+                   '-Wno-unused-result -Wno-unused-parameter '
                    '-Wno-missing-field-initializers -Wstrict-prototypes '
                    '-Werror=implicit-function-declaration -fvisibility=hidden '
                    '-D_WIN32_WINNT=0x0601 -DMS_DLL_ID=\'"3.9"\'  '
@@ -695,9 +701,9 @@ build_time_vars = {'ABIFLAGS': '',
  'PY_SSL_DEFAULT_CIPHER_STRING': 0,
  'PY_STDMODULE_CFLAGS': '-Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv '
                         '-O3 -Wall -D_POSIX -Wno-implicit-function-declaration '
-                        '-std=c99 -Wextra -Wno-unused-result '
-                        '-Wno-unused-parameter -Wno-missing-field-initializers '
-                        '-Wstrict-prototypes '
+                        '-Wno-incompatible-pointer-types -std=c99 -Wextra '
+                        '-Wno-unused-result -Wno-unused-parameter '
+                        '-Wno-missing-field-initializers -Wstrict-prototypes '
                         '-Werror=implicit-function-declaration '
                         '-fvisibility=hidden -D_WIN32_WINNT=0x0601 '
                         '-DMS_DLL_ID=\'"3.9"\'  -I../Include/internal '
